@@ -21,3 +21,36 @@ This site documents and describes the 2026 Open Scholarship Bootcamp to be held 
 The Bootcamp will be held at the Pattee and Paterno Libraries on the Penn State University Park campus. See [this link](wayfinding.qmd) for specific directions.
 
 ![](include/img/psu_pattee_gallery2.jpg)
+
+## Registration
+
+::: callout-important
+## To register
+Visit <https://forms.gle/BpCPnbrDUU3UMA869>.
+:::
+
+## Support
+
+The Bootcamp would not be possible without the generosity of our sponsors:
+
+:::::: columns
+::: {.column width="40%"}
+![](include/img/csc-logo.png){fig-align="center"}
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="55%"}
+[Child Study Center (CSC)](https://csc.la.psu.edu)
+:::
+::::::
+
+:::::: columns
+::: {.column width="40%"}
+![](include/img/libraries.png)
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="55%"}
+[Penn State University Libraries](https://libraries.psu.edu)
+:::
+::::::

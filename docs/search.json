@@ -67,7 +67,7 @@
     "href": "program-committee.html",
     "title": "Program Committee",
     "section": "",
-    "text": "Frank Hillary",
+    "text": "Carlos Freitas Almeida",
     "crumbs": [
       "People",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Program Committee</span>"
@@ -77,8 +77,8 @@
     "objectID": "program-committee.html#frank-hillary",
     "href": "program-committee.html#frank-hillary",
     "title": "Program Committee",
-    "section": "",
-    "text": "Frank G. Hillary is a Professor of Psychology and Neurology at Penn State. His research examines the influence of brain injury and disease on functional brain organization over the lifespan. To do so, he incorporates cognitive testing, structural and functional MRI, and network neuroscience approaches (e.g., graph theory) in his work. There is a critical need in the neuroimaging literature for open code and data sharing and convergence on accepted methods to increase scientific reliability. Because of this, over the past 5 years Dr. Hillary’s work has shifted to focus on the reproducibility of neuroimaging work in the study of brain disorders. He is the leader of an international working group, ENIGMA Brain Injury (see: https://enigma.ini.usc.edu/ongoing/enigma-tbi/), focused on genetics and neuroimaging data sharing and reproducible science.\nfgh3@psu.edu",
+    "section": "Frank Hillary",
+    "text": "Frank Hillary\n\n\n\n\nFrank G. Hillary is a Professor of Psychology and Neurology at Penn State. His research examines the influence of brain injury and disease on functional brain organization over the lifespan. To do so, he incorporates cognitive testing, structural and functional MRI, and network neuroscience approaches (e.g., graph theory) in his work. There is a critical need in the neuroimaging literature for open code and data sharing and convergence on accepted methods to increase scientific reliability. Because of this, over the past 5 years Dr. Hillary’s work has shifted to focus on the reproducibility of neuroimaging work in the study of brain disorders. He is the leader of an international working group, ENIGMA Brain Injury (see: https://enigma.ini.usc.edu/ongoing/enigma-tbi/), focused on genetics and neuroimaging data sharing and reproducible science.\nfgh3@psu.edu",
     "crumbs": [
       "People",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Program Committee</span>"
@@ -135,6 +135,28 @@
     "text": "Registration\n\n\n\n\n\n\nImportantTo register\n\n\n\nVisit https://forms.gle/BpCPnbrDUU3UMA869.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
+    ]
+  },
+  {
+    "objectID": "program-committee.html#carlos-freitas-almeida",
+    "href": "program-committee.html#carlos-freitas-almeida",
+    "title": "Program Committee",
+    "section": "",
+    "text": "Carlos Freitas Almeida is a graduate student in Psychology at Penn State.",
+    "crumbs": [
+      "People",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Program Committee</span>"
+    ]
+  },
+  {
+    "objectID": "program-committee.html#carrie-brown",
+    "href": "program-committee.html#carrie-brown",
+    "title": "Program Committee",
+    "section": "Carrie Brown",
+    "text": "Carrie Brown\n\n\n\n\nCarrie Brown is Client Support Lead with the Institute for Computational & Data Science (ICDS).\ncarrie.brown@psu.edu",
+    "crumbs": [
+      "People",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Program Committee</span>"
     ]
   }
 ]

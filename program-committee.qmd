@@ -3,29 +3,29 @@ title: "Program Committee"
 format: html
 ---
 
-<!-- ## Carlos Freitas Almeida -->
+## Carlos Freitas Almeida
 
-<!-- :::: {.columns} -->
-<!-- ::: {.column width=40%} -->
-<!-- ![](include/img/almeida-carlos-freitas.jpg){width=200px height=200px} -->
-<!-- ::: -->
-<!-- ::: {.column width=60%} -->
-<!-- Carlos Freitas Almeida is a graduate student in Psychology at Penn State. -->
-<!-- ::: -->
-<!-- :::: -->
+:::: {.columns}
+::: {.column width=40%}
+![](include/img/almeida-carlos-freitas.jpg){width=200px height=200px}
+:::
+::: {.column width=60%}
+Carlos Freitas Almeida is a graduate student in Psychology at Penn State.
+:::
+::::
 
-<!-- ## Carrie Brown -->
+## Carrie Brown
 
-<!-- :::: {.columns} -->
-<!-- ::: {.column width=40%} -->
-<!-- ![](include/img/brown-carrie.jpg){width=200px height=200px} -->
-<!-- ::: -->
-<!-- ::: {.column width=60%} -->
-<!-- Carrie Brown is Client Support Lead with the [Institute for Computational & Data Science (ICDS)](https://icds.psu.edu). -->
+:::: {.columns}
+::: {.column width=40%}
+![](include/img/brown-carrie.jpg){width=200px height=200px}
+:::
+::: {.column width=60%}
+Carrie Brown is Client Support Lead with the [Institute for Computational & Data Science (ICDS)](https://icds.psu.edu).
 
-<!-- carrie.brown@psu.edu -->
-<!-- ::: -->
-<!-- :::: -->
+carrie.brown@psu.edu
+:::
+::::
 
 <!-- ## Bruce Desmarais -->
 

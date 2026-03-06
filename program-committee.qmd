@@ -135,18 +135,18 @@ jpv5319@psu.edu
 :::
 ::::
 
-<!-- ## John West -->
+## John West
 
-<!-- :::: {.columns} -->
-<!-- ::: {.column width=50%} -->
-<!-- ![](include/img/west-john.jpg){width=200px height=200px} -->
-<!-- ::: -->
-<!-- ::: {.column width=50%} -->
-<!-- John West is a postdoctoral researcher in the Department of Psychology. -->
+:::: {.columns}
+::: {.column width=50%}
+![](include/img/west-john.jpg){width=200px height=200px}
+:::
+::: {.column width=50%}
+John West is a postdoctoral researcher in the Department of Psychology.
 
-<!-- johnwest@psu.edu -->
-<!-- ::: -->
-<!-- :::: -->
+johnwest@psu.edu
+:::
+::::
 
 ## Briana Wham
 

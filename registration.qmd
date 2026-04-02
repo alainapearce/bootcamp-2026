@@ -31,10 +31,12 @@ suppressPackageStartupMessages(library('janitor'))
 
 ## Import
 
-The Google Form generates a Google Sheet that we download to a protected directory (`include/csv`) that is *not* synched to GitHub.
+The Google Form generates a Google Sheet that we download to a protected directory (`private/csv`) that is *not* synched to GitHub.
 
 ::: {.callout-important}
 This is because the sheet contains personally identifying information.
+
+To implement this, we add `private` to our `.gitignore` file in the project's root directory. This omits all files in `private/` from version control and keeps them local to the machine we render the site from. 
 :::
 
 ```{r}

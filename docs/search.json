@@ -44,7 +44,7 @@
     "href": "index.html#support",
     "title": "Bootcamp 2026",
     "section": "Support",
-    "text": "Support\nThe Bootcamp would not be possible without the generosity of our sponsors:\n\n\n\n\n\n\n\n\n\n\nChild Study Center (CSC)\n\n\n\n\n\n\n\n\nPenn State University Libraries",
+    "text": "Support\nThe Bootcamp would not be possible without the generosity of our sponsors:\n\n\n\n\n\n\n\n\n\n\nChild Study Center (CSC)\n\n\n\n\n\n\n\n\nPenn State University Libraries\n\n\n\n\n\n\n\n\nInstitute for Computational and Data Sciences (ICDS)\n\n\n\n\n\n\n\n\nSocial Sciences Research Institute (SSRI)\n\n\n\n\n\n\n\n\nDepartment of Psychology",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
     ]
@@ -54,7 +54,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Overview\nThis section provides an overview about what is happening and when over the 2 day bootcamp. See the detailed daily schedules for more information.",
+    "text": "Overview\nThis section provides an overview about what is happening and when over the two-day bootcamp. See the detailed daily schedules for more information.",
     "crumbs": [
       "Schedule"
     ]
@@ -290,11 +290,33 @@
     ]
   },
   {
+    "objectID": "presenters.html#christopher-dancy",
+    "href": "presenters.html#christopher-dancy",
+    "title": "Presenters",
+    "section": "",
+    "text": "Christopher L. Dancy, Ph.D. is the Harold and Inge Marcus Industrial and Manufacturing Career Development Associate Professor with appointments in Industrial and Manufacturing Engineering and Computer Science and Engineering. He has research interests in AI and Cognitive Science, computational physiology, affective neuroscience, and emotion theory. Dancy creates information processing agents in software, using these agents for behavior simulation, theory exploration, HCI, and systems engineering purposes, and understanding agents and AI systems in the context of existing social structures",
+    "crumbs": [
+      "People",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Presenters</span>"
+    ]
+  },
+  {
     "objectID": "presenters.html#wayne-figurelle",
     "href": "presenters.html#wayne-figurelle",
     "title": "Presenters",
     "section": "Wayne Figurelle",
     "text": "Wayne Figurelle\n\n\n\n\nWayne Figurelle is Assistant Director of Innovation and Outreach at the Institute for Computational and Data Science Sciences (ICDS). Wayne has over 25 years of experience as a senior manager, with a focus in computer engineering. Figurelle joined Penn State in 2001 as senior technical specialist of the Pennsylvania Technical Assistance Program (PennTAP) and was promoted to director of PennTAP in 2006. He has also served as director of Industrial Innovation Programs and the EDA University Center in the Penn State College of Engineering. He joined ICS as assistant director in 2014. Prior to joining Penn State, he held positions at Raytheon and Link Computer Corporation.",
+    "crumbs": [
+      "People",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Presenters</span>"
+    ]
+  },
+  {
+    "objectID": "presenters.html#courtney-karmelita",
+    "href": "presenters.html#courtney-karmelita",
+    "title": "Presenters",
+    "section": "Courtney Karmelita",
+    "text": "Courtney Karmelita\n\n\n\n\nCourtney Karmelita, D.Ed. is Chief of Staff for the Office of Research Protections and Penn State’s Research Integrity Officer.",
     "crumbs": [
       "People",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Presenters</span>"
@@ -316,7 +338,7 @@
     "href": "presenters.html#melissa-kline-struhl",
     "title": "Presenters",
     "section": "Melissa Kline Struhl",
-    "text": "Melissa Kline Struhl\n\n\n\n\nMelissa Kline Struhl is Executive Director of Children Helping Science and is one of the principal developers behind the Psych-DS data standard. She earned her Ph.D. in Developmental Psychology from MIT.",
+    "text": "Melissa Kline Struhl\n\n\n\n\nMelissa Kline Struhl, Ph.D. is Executive Director of Children Helping Science and is one of the principal developers behind the Psych-DS data standard. She earned her Ph.D. in Developmental Psychology from MIT.",
     "crumbs": [
       "People",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Presenters</span>"
@@ -371,7 +393,7 @@
     "href": "registration.html#import",
     "title": "Registration",
     "section": "Import",
-    "text": "Import\nThe Google Form generates a Google Sheet that we download to a protected directory (include/csv) that is not synched to GitHub.\n\n\n\n\n\n\nImportant\n\n\n\nThis is because the sheet contains personally identifying information.\n\n\n\n\nCode\nx &lt;- assertthat::is.string(params$csv_dir)\nif (!dir.exists(params$csv_dir)) {\n  message(\"Creating missing `include/csv/`.\")\n  dir.create(params$csv_dir)\n}\nx &lt;- assertthat::is.writeable(params$csv_dir)\n\n# options(gargle_oauth_email = Sys.getenv(\"GMAIL_SURVEY\"))\n# googledrive::drive_auth()\n\nx &lt;- assertthat::is.string(params$psu_id)\ngooglesheets4::gs4_auth(email = params$psu_id)\n\nx &lt;- assertthat::is.string(params$sheets_id)\nregistrations &lt;- googlesheets4::read_sheet(params$reg_sheets_id,\n                                           sheet = \"Form Responses 1\")\nassertthat::assert_that(is_tibble(registrations))\n\n\n[1] TRUE\n\n\nCode\nregistration_full_fn &lt;- file.path(params$csv_dir, params$registration_fn)\nx &lt;- assertthat::is.string(registration_full_fn)\n\nreadr::write_csv(registrations, file = registration_full_fn)\n\n\nDownload program committee member data, too.\n\n\nCode\nprogram_comm &lt;- googlesheets4::read_sheet(params$reg_sheets_id,\n                                          sheet = \"planning_committee\")\nassertthat::assert_that(is_tibble(program_comm))\n\n\n[1] TRUE\n\n\nCode\nx &lt;- assertthat::is.string(params$program_comm_fn)\nprogram_comm_full_fn &lt;- file.path(params$csv_dir, params$program_comm_fn)\n\nreadr::write_csv(program_comm, file = program_comm_full_fn)",
+    "text": "Import\nThe Google Form generates a Google Sheet that we download to a protected directory (private/csv) that is not synched to GitHub.\n\n\n\n\n\n\nImportant\n\n\n\nThis is because the sheet contains personally identifying information.\nTo implement this, we add private to our .gitignore file in the project’s root directory. This omits all files in private/ from version control and keeps them local to the machine we render the site from.\n\n\n\n\nCode\nx &lt;- assertthat::is.string(params$csv_dir)\nif (!dir.exists(params$csv_dir)) {\n  message(\"Creating missing `include/csv/`.\")\n  dir.create(params$csv_dir)\n}\nx &lt;- assertthat::is.writeable(params$csv_dir)\n\n# options(gargle_oauth_email = Sys.getenv(\"GMAIL_SURVEY\"))\n# googledrive::drive_auth()\n\nx &lt;- assertthat::is.string(params$psu_id)\ngooglesheets4::gs4_auth(email = params$psu_id)\n\nx &lt;- assertthat::is.string(params$sheets_id)\nregistrations &lt;- googlesheets4::read_sheet(params$reg_sheets_id,\n                                           sheet = \"Form Responses 1\")\nassertthat::assert_that(is_tibble(registrations))\n\n\n[1] TRUE\n\n\nCode\nregistration_full_fn &lt;- file.path(params$csv_dir, params$registration_fn)\nx &lt;- assertthat::is.string(registration_full_fn)\n\nreadr::write_csv(registrations, file = registration_full_fn)\n\n\nDownload program committee member data, too.\n\n\nCode\nprogram_comm &lt;- googlesheets4::read_sheet(params$reg_sheets_id,\n                                          sheet = \"planning_committee\")\nassertthat::assert_that(is_tibble(program_comm))\n\n\n[1] TRUE\n\n\nCode\nx &lt;- assertthat::is.string(params$program_comm_fn)\nprogram_comm_full_fn &lt;- file.path(params$csv_dir, params$program_comm_fn)\n\nreadr::write_csv(program_comm, file = program_comm_full_fn)",
     "crumbs": [
       "More",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Registration Data</span>"
@@ -393,7 +415,7 @@
     "href": "registration.html#visualize",
     "title": "Registration",
     "section": "Visualize",
-    "text": "Visualize\n\nRegistration numbers\n\n\nCode\nregistrations_yes &lt;- registrations_clean |&gt; \n  dplyr::mutate(registered = TRUE)\n\n\nAs of 2026-03-31, we have n=8 registered attendees and presenters. That is 10.7% of our target registration/attendance limit of n=75.\n\n\nTime series\n\n\nCode\nregistrations_clean |&gt;\n  dplyr::arrange(timestamp) |&gt;\n  dplyr::mutate(resp_index = seq_along(timestamp)) |&gt;\n  ggplot() +\n  aes(x = timestamp, y = resp_index) +\n  geom_point() +\n  geom_line() +\n  theme(axis.text.x = element_text(angle = 90)) +\n  labs(x = NULL, y = 'n registrations') +\n  scale_color_manual(breaks = c(\"No\", \"Yes\"),\n                        values=c(\"red\", \"green\")) +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\nFigure 7.1: Time series of registrations.\n\n\n\n\n\n\n\nRegistrant attendance plans by day\n\n\nCode\nregistrations_clean |&gt;\n  dplyr::mutate(plan_wed = stringr::str_detect(attend_days, \"Mon\"),\n                plan_thu = stringr::str_detect(attend_days, \"Tue\")) |&gt;\n  dplyr::mutate(n_mon = sum(plan_wed, na.rm = TRUE),\n                n_tue = sum(plan_thu, na.rm = TRUE)) |&gt;\n  dplyr::select(n_mon, n_tue) |&gt;\n  dplyr::distinct() |&gt;\n  knitr::kable(format = \"html\") |&gt;\n  kableExtra::kable_classic()\n\n\n\n\nTable 7.2\n\n\n\n\n\n\n\nn_mon\n\n\nn_tue\n\n\n\n\n\n\n8\n\n\n8\n\n\n\n\nBootcamp registrations by day.",
+    "text": "Visualize\n\nRegistration numbers\n\n\nCode\nregistrations_yes &lt;- registrations_clean |&gt; \n  dplyr::mutate(registered = TRUE)\n\n\nAs of 2026-04-02, we have n=8 registered attendees and presenters. That is 10.7% of our target registration/attendance limit of n=75.\n\n\nTime series\n\n\nCode\nregistrations_clean |&gt;\n  dplyr::arrange(timestamp) |&gt;\n  dplyr::mutate(resp_index = seq_along(timestamp)) |&gt;\n  ggplot() +\n  aes(x = timestamp, y = resp_index) +\n  geom_point() +\n  geom_line() +\n  theme(axis.text.x = element_text(angle = 90)) +\n  labs(x = NULL, y = 'n registrations') +\n  scale_color_manual(breaks = c(\"No\", \"Yes\"),\n                        values=c(\"red\", \"green\")) +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\nFigure 7.1: Time series of registrations.\n\n\n\n\n\n\n\nRegistrant attendance plans by day\n\n\nCode\nregistrations_clean |&gt;\n  dplyr::mutate(plan_wed = stringr::str_detect(attend_days, \"Mon\"),\n                plan_thu = stringr::str_detect(attend_days, \"Tue\")) |&gt;\n  dplyr::mutate(n_mon = sum(plan_wed, na.rm = TRUE),\n                n_tue = sum(plan_thu, na.rm = TRUE)) |&gt;\n  dplyr::select(n_mon, n_tue) |&gt;\n  dplyr::distinct() |&gt;\n  knitr::kable(format = \"html\") |&gt;\n  kableExtra::kable_classic()\n\n\n\n\nTable 7.2\n\n\n\n\n\n\n\nn_mon\n\n\nn_tue\n\n\n\n\n\n\n8\n\n\n8\n\n\n\n\nBootcamp registrations by day.",
     "crumbs": [
       "More",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Registration Data</span>"
@@ -474,28 +496,6 @@
     "crumbs": [
       "More",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Installing Quarto</span>"
-    ]
-  },
-  {
-    "objectID": "presenters.html#christopher-dancy",
-    "href": "presenters.html#christopher-dancy",
-    "title": "Presenters",
-    "section": "",
-    "text": "Christopher L. Dancy is the Harold and Inge Marcus Industrial and Manufacturing Career Development Associate Professor. He has research interests in AI and Cognitive Science, computational physiology, affective neuroscience, and emotion theory. Dancy creates information processing agents in software, using these agents for behavior simulation, theory exploration, HCI, and systems engineering purposes, and understanding agents and AI systems in the context of existing social structures",
-    "crumbs": [
-      "People",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Presenters</span>"
-    ]
-  },
-  {
-    "objectID": "presenters.html#courtney-karmelita",
-    "href": "presenters.html#courtney-karmelita",
-    "title": "Presenters",
-    "section": "Courtney Karmelita",
-    "text": "Courtney Karmelita\n\n\n\n\nCourtney Karmelita, D.Ed. is Chief of Staff for the Office of Research Protections and Penn State’s Research Integrity Officer.",
-    "crumbs": [
-      "People",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Presenters</span>"
     ]
   }
 ]

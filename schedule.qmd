@@ -3,7 +3,7 @@ title: "Schedule"
 format: html
 ---
 
-This section provides an overview about what is happening and when over the 2 day bootcamp.
+This section provides an overview about what is happening and when over the two-day bootcamp.
 See the detailed daily schedules for more information.
 
 ## Overview

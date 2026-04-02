@@ -54,3 +54,42 @@ The Bootcamp would not be possible without the generosity of our sponsors:
 [Penn State University Libraries](https://libraries.psu.edu)
 :::
 ::::::
+
+:::::: columns
+::: {.column width="40%"}
+![](include/img/icds.png)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="55%"}
+[Institute for Computational and Data Sciences (ICDS)](https://www.icds.psu.edu)
+:::
+::::::
+
+::::: columns
+::: {.column width="40%"}
+![](include/img/ssri-logo.png)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="55%"}
+[Social Sciences Research Institute (SSRI)](https://ssri.psu.edu/)
+:::
+::::::
+
+::::: columns
+::: {.column width="40%"}
+![](include/img/psychology.png)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="55%"}
+[Department of Psychology](https://psych.la.psu.edu)
+:::
+::::::

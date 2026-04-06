@@ -93,3 +93,16 @@ The Bootcamp would not be possible without the generosity of our sponsors:
 [Department of Psychology](https://psych.la.psu.edu)
 :::
 ::::::
+
+::::: columns
+::: {.column width="40%"}
+![](include/img/statistics-dept.png)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="55%"}
+[Department of Statistics](https://science.psu.edu/stat)
+:::
+::::::

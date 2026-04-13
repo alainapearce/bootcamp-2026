@@ -29,7 +29,7 @@ This schedule is a work-in-progress and subject to change.
 | Topic | Presenter | Location |
 |--------------|----------|-------|
 | *Harnessing advanced cyberinfrastructure for research: An introduction to Roar and ICDS resources* | [Carrie Brown](program-committee.qmd#carrie-brown) | TBD |
-| *Quarto (Part II): Making useful things reproducibly* | [Rick Gilmore](directors.qmd#rick-gilmore) | TBD | 
+| *Intro to copyright and open access publishing* | [Danielle Steinhart](presenters.qmd#danielle-steinhart) | TBD |
 
 : {tbl-colwidths="[60,20,20]"}
 
@@ -44,7 +44,7 @@ This schedule is a work-in-progress and subject to change.
 
 | Topic | Presenter | Location |
 |--------------|----------|-------|
-| *Intro to copyright and open access publishing* | [Danielle Steinhart](presenters.qmd#danielle-steinhart) | TBD |
+| *Quarto (Part II): Making useful things reproducibly* | [Rick Gilmore](directors.qmd#rick-gilmore) | TBD | 
 | *Introduction to data standards* |  [Alaina Pearce](directors.qmd#alaina-pearce) | TBD |
 
 : {tbl-colwidths="[60,20,20]"}

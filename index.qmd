@@ -29,6 +29,8 @@ The Bootcamp will be held at the Pattee and Paterno Libraries on the Penn State 
 Visit <https://forms.gle/myMCqAZsAHXQBy4n7>.
 :::
 
+![Data about the home colleges or units of registered participants. See [Registration Data](registration.qmd) for details.](include/fig/fig-regis-dept-coll-1.png){#fig-registration-units width="75%"}
+
 ## Support
 
 The Bootcamp would not be possible without the generosity of our sponsors:

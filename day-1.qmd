@@ -33,7 +33,25 @@ This schedule is a work-in-progress and is subject to change.
 
 ### 09:00 am • Welcome and Overview {-}
 
-[Rick Gilmore](directors.qmd#rick-gilmore) and [Alaina Pearce](directors.qmd#alaina-pearce), Bootcamp Directors.
+Bootcamp Co-Directors
+
+:::: {.columns}
+::: {.column width=80%}
+[Rick Gilmore](directors.qmd#rick-gilmore)
+:::
+::: {.column width=20%}
+![](include/img/gilmore-rick.png){width=100px height=100px}
+:::
+::::
+
+:::: {.columns}
+::: {.column width=80%}
+[Alaina Pearce](directors.qmd#alaina-pearce)
+:::
+::: {.column width=20%}
+![](include/img/pearce-alaina.jpeg){width=100px height=100px}
+:::
+::::
 
 ### 09:15 am • Penn State Research Data Stewardship Program {-}
 
@@ -71,7 +89,7 @@ This schedule is a work-in-progress and is subject to change.
 
 Openly shared research data can be used for purposes beyond those envisioned by the scientists who originally collected the data.
 Some of these uses advance discovery and some veer into misuse or worse misconduct.
-What's the difference? Who decides? How can researchers who share data widely promote constructive uses? Come discuss these issues with us over lunch, informed by local experts ([Koraly Perez-Edgar](presenters.qmd#koraly-pérez-edgar) and [Bernd Haupt](presenters.qmd#bernd-haupt)) who have been on the front lines of these issues.
+What's the difference? Who decides? How can researchers who share data widely promote constructive uses? Come discuss these issues with us over lunch, informed by local experts ([Koraly Pérez-Edgar](presenters.qmd#koraly-pérez-edgar) and [Bernd Haupt](presenters.qmd#bernd-haupt)) who have been on the front lines of these issues.
 
 *Resources*
 

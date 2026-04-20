@@ -70,11 +70,24 @@ This schedule is a work-in-progress and subject to change.
 
 ### 01:30 pm • Panel Discussion {- #day_2_plenary_1}
 
-#### Open research data and AI ethics 
+#### Open research data and AI ethics
 
-- [Christopher Dancy](presenters.qmd#christopher-dancy)
-- [Courtney Karmelita](presenters.qmd#courtney-karmelita)
-- [Aleksandra (Seša) Slavkovic](presenters.qmd#aleksandra-seša-slavkovic)
+Sharing data openly is increasingly encouraged and sometimes mandated by funder policies. 
+This panel explores ethical questions at the intersection of AI and open data. 
+We'll discuss use of AI in the research lifecycle prior to sharing, to the role of AI in parsing and interrogating data after it is made publicly available. 
+While some data may be shared with the explicit goal of being machine actionable, applying AI to more sensitive data such as de-identified human subjects data, introduces distinct risks.
+
+:::: {.columns}
+::: {.column width=33%}
+![[Christopher Dancy](presenters.qmd#christopher-dancy)](include/img/dancy-christopher.png){width="100px" height="100px" fig-align="left"}
+:::
+::: {.column width=33%}
+![[Courtney Karmelita](presenters.qmd#courtney-karmelita)](include/img/karmelita-courtney.jpg){width="100px" height="100px" fig-align="left"}
+:::
+::: {.column width=33%}
+![[Aleksandra (Seša) Slavkovic](presenters.qmd#aleksandra-seša-slavkovic)](include/img/slavkovic-alexandra.jpg){width="100px" height="100px"fig-align="left"}
+:::
+::::
 
 ### 02:45 pm • Break {{< fa mug-hot >}} {-}
 

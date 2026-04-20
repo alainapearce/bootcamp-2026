@@ -31,7 +31,7 @@ This schedule is a work-in-progress and is subject to change.
 
 ### 08:30 am • Breakfast {{< fa mug-hot >}} {{< fa bread-slice >}} {-}
 
-### 09:00 am • Welcome and Overview {-}
+### 09:00 am • Bootcamp Overview {-}
 
 Bootcamp Co-Directors
 
@@ -50,6 +50,18 @@ Bootcamp Co-Directors
 :::
 ::: {.column width=20%}
 ![](include/img/pearce-alaina.jpeg){width=100px height=100px}
+:::
+::::
+
+### 09:05 am • Welcoming Remarks
+
+:::: {.columns}
+::: {.column width=80%}
+[Nathan Hall](presenters.qmd#nathan-f-hall)
+:::
+::: {.column width=20%}
+![](include/img/hall-nathan.jpg){width=100px height=100px}
+
 :::
 ::::
 
@@ -89,7 +101,16 @@ Bootcamp Co-Directors
 
 Openly shared research data can be used for purposes beyond those envisioned by the scientists who originally collected the data.
 Some of these uses advance discovery and some veer into misuse or worse misconduct.
-What's the difference? Who decides? How can researchers who share data widely promote constructive uses? Come discuss these issues with us over lunch, informed by local experts ([Koraly Pérez-Edgar](presenters.qmd#koraly-pérez-edgar) and [Bernd Haupt](presenters.qmd#bernd-haupt)) who have been on the front lines of these issues.
+What's the difference? Who decides? How can researchers who share data widely promote constructive uses? Come discuss these issues with us over lunch, informed by local experts who have been on the front lines of these issues.
+
+:::: {.columns}
+::: {.column width=50%}
+![[Bernd Haupt](presenters.qmd#bernd-haupt)](include/img/haupt-bernd.jpg){width=100px height=100px fig-align="left"}
+:::
+::: {.column width=50%}
+![[Koraly Pérez-Edgar](presenters.qmd#koraly-pérez-edgar)](include/img/perez-edgar-koraly.jpeg){width=100px height=100px fig-align="left"}
+:::
+::::
 
 *Resources*
 

@@ -12,7 +12,9 @@ See the detailed daily schedules for more information.
 
 *Breakfast provided* {{< fa mug-hot >}} {{< fa bread-slice >}}
 
-*Welcome*: [Rick Gilmore](directors.qmd#rick-gilmore) and [Alaina Pearce](directors.qmd#alaina-pearce)
+*Orientation*: [Rick Gilmore](directors.qmd#rick-gilmore) and [Alaina Pearce](directors.qmd#alaina-pearce)
+
+*Welcome*: [Nathan Hall](presenters.qmd#nathan-f-hall), Penn State Libraries
 
 *Presentation*: Research Data Stewardship Program, [Briana Wham](program-committee.qmd#briana-wham)
 

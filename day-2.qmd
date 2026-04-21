@@ -87,6 +87,9 @@ While some data may be shared with the explicit goal of being machine actionable
 ::: {.column width=33%}
 ![[Aleksandra (Seša) Slavkovic](presenters.qmd#aleksandra-seša-slavkovic)](include/img/slavkovic-alexandra.jpg){width="100px" height="100px"fig-align="left"}
 :::
+::: {.column width=33%}
+![[Rui Zhang](presenters.qmd#Rui Zhang)](include/img/rui_zhang.jpg){width="100px" height="100px"fig-align="left"}
+:::
 ::::
 
 ### 02:45 pm • Break {{< fa mug-hot >}} {-}

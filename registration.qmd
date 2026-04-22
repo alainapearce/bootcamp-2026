@@ -196,7 +196,7 @@ registrations_clean |>
   dplyr::mutate(position = fct_reorder(position, n)) |>
   ggplot() +
   geom_bar(aes(x = position, y = n), fill = "#96BEE6", stat = "identity") +
-  scale_y_continuous(breaks = seq(2, 14, by = 2)) +
+  scale_y_continuous(breaks = seq(2, 20, by = 2)) +
   theme(legend.position = "right") +
   theme(legend.title = element_blank()) +
   xlab("") +
@@ -298,7 +298,8 @@ registrations_clean <- registrations_clean |>
       `stat` = "Statistics",
       `PCD` = "Preservation Conservation & Digitization",
       `Vazquez Lab/Eberly College of Science/Bio` = "Biology",
-      `WORKFORCE EDUCATION AND DEVELOPMENT` = "Workforce Education & Development"
+      `WORKFORCE EDUCATION AND DEVELOPMENT` = "Workforce Education & Development",
+      `College of Medicine, CTSI` = "CTSI"
     )
   ) |>
   dplyr::mutate(
@@ -380,7 +381,8 @@ registrations_clean <- registrations_clean |>
       "Schreyer Institute for Teaching Excellence" ~ "Old Main",
       "HHD" ~ "HHD",
       "Meteorology & Atmospheric Sciences" ~ "EMS",
-      "Preservation Conservation & Digitization" ~ "Libraries"
+      "Preservation Conservation & Digitization" ~ "Libraries",
+      "CTSI" ~ "Hershey"
     ),
     .default = "Unknown",
     .missing = "Unknown"
@@ -398,7 +400,7 @@ registrations_clean |>
   dplyr::mutate(college = fct_reorder(college, n)) |>
   ggplot() +
   geom_bar(aes(x = college, y = n), fill = "#BF8226", stat = "identity") +
-  scale_y_continuous(breaks = seq(2, 12, by = 2)) +
+  scale_y_continuous(breaks = seq(2, 16, by = 2)) +
   theme(legend.position = "right") +
   theme(legend.title = element_blank()) +
   xlab("") +

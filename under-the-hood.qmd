@@ -29,6 +29,12 @@ You may inspect the Markdown for each page on the site by clicking on the `</> C
 Pages with more extensive data processing (e.g., [registration.qmd](registration.qmd)) have "chunk-specific" buttons that hide and reveal the code.
 :::
 
+## Styles
+
+This site makes use of a Sassy Cascading Style Sheet (SCSS) that makes the site's styling compatible with Penn State's Strategic Communication recommendations for visual [identity](https://brand.la.psu.edu/visual-identity/), specifically color and typography.
+
+The file is located in [`include/css/psu.scss`](include/css/psu.scss).
+
 ## Packages
 
 ```{r}

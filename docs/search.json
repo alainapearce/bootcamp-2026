@@ -585,5 +585,16 @@
       "More",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Under the hood</span>"
     ]
+  },
+  {
+    "objectID": "under-the-hood.html#styles",
+    "href": "under-the-hood.html#styles",
+    "title": "Under the hood",
+    "section": "Styles",
+    "text": "Styles\nThis site makes use of a Sassy Cascading Style Sheet (SCSS) that makes the site’s styling compatible with Penn State’s Strategic Communication recommendations for visual identity, specifically color and typography.\nThe file is located in include/css/psu.scss.",
+    "crumbs": [
+      "More",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Under the hood</span>"
+    ]
   }
 ]

@@ -255,6 +255,7 @@ div.csl-indent {
   <ul>
   <li><a href="#about" id="toc-about" class="nav-link active" data-scroll-target="#about">About</a></li>
   <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#styles" id="toc-styles" class="nav-link" data-scroll-target="#styles">Styles</a></li>
   <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">Packages</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
@@ -320,6 +321,11 @@ Note
 <p>Pages with more extensive data processing (e.g., <a href="./registration.html">registration.qmd</a>) have “chunk-specific” buttons that hide and reveal the code.</p>
 </div>
 </div>
+</section>
+<section id="styles" class="level2">
+<h2 class="anchored" data-anchor-id="styles">Styles</h2>
+<p>This site makes use of a Sassy Cascading Style Sheet (SCSS) that makes the site’s styling compatible with Penn State’s Strategic Communication recommendations for visual <a href="https://brand.la.psu.edu/visual-identity/">identity</a>, specifically color and typography.</p>
+<p>The file is located in <a href="include/css/psu.scss"><code>include/css/psu.scss</code></a>.</p>
 </section>
 <section id="packages" class="level2">
 <h2 class="anchored" data-anchor-id="packages">Packages</h2>
@@ -822,14 +828,20 @@ Xie, Y., Dervieux, C., &amp; Riederer, E. (2020). <em>R markdown cookbook</em>. 
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>Pages with more extensive data processing (e.g., <span class="co">[</span><span class="ot">registration.qmd</span><span class="co">](registration.qmd)</span>) have "chunk-specific" buttons that hide and reveal the code.</span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="fu">## Packages</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="fu">## Styles</span></span>
 <span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>grateful<span class="sc">::</span><span class="fu">cite_packages</span>(<span class="at">output =</span> <span class="st">"paragraph"</span>, <span class="at">out.dir =</span> <span class="st">"include/bib/"</span>)</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>This site makes use of a Sassy Cascading Style Sheet (SCSS) that makes the site's styling compatible with Penn State's Strategic Communication recommendations for visual <span class="co">[</span><span class="ot">identity</span><span class="co">](https://brand.la.psu.edu/visual-identity/)</span>, specifically color and typography.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>The file is located in <span class="co">[</span><span class="ot">`include/css/psu.scss`</span><span class="co">](include/css/psu.scss)</span>.</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu">## Packages</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>grateful<span class="sc">::</span><span class="fu">cite_packages</span>(<span class="at">output =</span> <span class="st">"paragraph"</span>, <span class="at">out.dir =</span> <span class="st">"include/bib/"</span>)</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span>
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

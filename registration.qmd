@@ -196,7 +196,7 @@ registrations_clean |>
   dplyr::mutate(position = fct_reorder(position, n)) |>
   ggplot() +
   geom_bar(aes(x = position, y = n), fill = "#96BEE6", stat = "identity") +
-  scale_y_continuous(breaks = seq(2, 20, by = 2)) +
+  scale_y_continuous(breaks = seq(2, 24, by = 2)) +
   theme(legend.position = "right") +
   theme(legend.title = element_blank()) +
   xlab("") +
@@ -299,15 +299,15 @@ registrations_clean <- registrations_clean |>
       `PCD` = "Preservation Conservation & Digitization",
       `Vazquez Lab/Eberly College of Science/Bio` = "Biology",
       `WORKFORCE EDUCATION AND DEVELOPMENT` = "Workforce Education & Development",
-      `College of Medicine, CTSI` = "CTSI"
+      `College of Medicine, CTSI` = "CTSI",
+      `Curriculum and Instructions` = "Curriculum & Instruction",
+      `Kinesiology, HHD` = "Kinesiology"
     )
   ) |>
   dplyr::mutate(
     college = recode_values(
       dept,
-      "Statistics" ~ "ECoS",
       "University of Kansas, Psychology" ~ "UKansas",
-      "Biology" ~ "ECoS",
       "Psychology" ~ "CLA",
       "Spanish, Italian, & Portuguese" ~ "CLA",
       "German & Slavic Languages" ~ "CLA",
@@ -324,6 +324,11 @@ registrations_clean <- registrations_clean |>
       "Asian Studies" ~ "CLA",
       "Sociology & Criminology" ~ "CLA",
       "School of Labor & Employment Relations" ~ "CLA",
+      "Statistics" ~ "ECoS",
+      "Biology" ~ "ECoS",
+      "Astronomy & Astrophysics" ~ "ECoS",
+      "Chemistry" ~ "ECoS",
+      "Mathematics" ~ "ECoS",
       "IST" ~ "IST",
       "Chemical Engineering" ~ "Engineering",
       "Material Science and Engineering" ~ "Engineering",
@@ -338,15 +343,11 @@ registrations_clean <- registrations_clean |>
       "College of Nursing" ~ "Nursing",
       "Bellisario College of Communication" ~ "Comm",
       "Mass Communications" ~ "Comm",
-      "Marketing" ~ "Smeal",
       "Neuroscience" ~ "Med",
       "College of Human and Health Development" ~ "HHD",
       "University Libraries" ~ "Libraries",
       "ICDS" ~ "ICDS",
       "EESI" ~ "EESI",
-      "Astronomy & Astrophysics" ~ "ECoS",
-      "Chemistry" ~ "ECoS",
-      "Mathematics" ~ "ECoS",
       "Entomology" ~ "AgSci",
       "Ecosystem Science & Management" ~ "AgSci",
       "Plant Pathology & Environmental Microbiology" ~ "AgSci",
@@ -363,6 +364,7 @@ registrations_clean <- registrations_clean |>
       "Engineering" ~ "Engineering",
       "LPS/LDT" ~ "Education",
       "Workforce Education & Development" ~ "Education",
+      "Curriculum & Instruction" ~ "Education",
       "Demography" ~ "CLA",
       "OVPR" ~ "OVPR",
       "ORP" ~ "OVPR",
@@ -376,6 +378,7 @@ registrations_clean <- registrations_clean |>
       "Information Science and Technology" ~ "IST",
       "Mechanical Engineering (Harrisburg)" ~ "PSU Harrisburg",
       "Accounting" ~ "Smeal",
+      "Marketing" ~ "Smeal",
       "PSU Harrisburg" ~ "PSU Harrisburg",
       "Sci, Engr, & Tech" ~ "PSU Harrisburg",
       "Schreyer Institute for Teaching Excellence" ~ "Old Main",
@@ -400,7 +403,7 @@ registrations_clean |>
   dplyr::mutate(college = fct_reorder(college, n)) |>
   ggplot() +
   geom_bar(aes(x = college, y = n), fill = "#BF8226", stat = "identity") +
-  scale_y_continuous(breaks = seq(2, 16, by = 2)) +
+  scale_y_continuous(breaks = seq(2, 24, by = 2)) +
   theme(legend.position = "right") +
   theme(legend.title = element_blank()) +
   xlab("") +

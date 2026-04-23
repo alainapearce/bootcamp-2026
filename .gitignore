@@ -7,3 +7,4 @@ bootcamp-2026.Rproj
 
 /.quarto/
 **/*.quarto_ipynb
+.positai

@@ -98,9 +98,8 @@ While some data may be shared with the explicit goal of being machine actionable
 
 | Topic | Presenter | Location |
 |--------------|----------|-------|
-| *Quarto (Part III): Reproducible research reports* | [John West](program-committee.qmd#john-west) | W211A Pattee | 
-| *Questionable research practices* |  [Jennifer Valcin](program-committee.qmd#jennifer-valcin) | TBD |
-| *Introduction to Python and Jupyter notebooks* | Dewey Room |
+| *Quarto (Part III): Reproducible research reports* | [Rick Gilmore](directors.qmd#rick-gilmore) | TBD | 
+| *Questionable research practices* |  [Jennifer Valcin](program-committee.qmd#jennifer-valcin) | W211A Pattee |
 
 : {tbl-colwidths="[60,20,20]"}
 
@@ -108,41 +107,28 @@ While some data may be shared with the explicit goal of being machine actionable
 
 ### 04:30 pm • Open scholarship happy hour {{< fa wine-glass >}} {- #day_2_happy_hour}
 
-Location: TBD
+Hors d'oeuvres provided by the Bootcamp sponsors. Cash bar.
 
-<!-- ### 04:30 pm • Open scholarship happy hour {{< fa wine-glass >}} {- #day_2_happy_hour} -->
+::: {.callout-important}
+## Location -->
 
-<!-- Hors d'oeuvres provided by the Bootcamp sponsors. Cash bar. -->
+The Lobby Bar \
+100 West College Avenue \
+2nd floor, across from The Allen Street Grill
 
-<!-- ::: {.callout-important} -->
-<!-- ## Location -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.538779612024!2d-77.86313658434075!3d40.79415282215678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89cea898cdfb8a73%3A0xe610deef9fe200b0!2sAllen%20Street%20Grill!5e0!3m2!1sen!2sus!4v1752245481214!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-<!-- The Lobby Bar \ -->
-<!-- 100 West College Avenue \ -->
-<!-- 2nd floor, across from The Allen Street Grill -->
+:::: {.columns}
 
-<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.538779612024!2d-77.86313658434075!3d40.79415282215678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89cea898cdfb8a73%3A0xe610deef9fe200b0!2sAllen%20Street%20Grill!5e0!3m2!1sen!2sus!4v1752245481214!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+::: {.column width=45%}
+![Entrance to The Lobby Bar and The Allen Street Grill](include/img/allen-st-grill-entrance.png){.lightbox}
+:::
+::: {.column width=10%}
+:::
+::: {.column width=45%}
+![Inside The Lobby Bar](include/img/lobby-bar.png){.lightbox}
+:::
+::::
 
-<!-- :::: {.columns} -->
-<!-- ::: {.column width=45%} -->
-<!-- ![Entrance to The Lobby Bar and The Allen Street Grill](include/img/allen-st-grill-entrance.png){.lightbox} -->
-<!-- ::: -->
-<!-- ::: {.column width=10%} -->
-<!-- ::: -->
-<!-- ::: {.column width=45%} -->
-<!-- ![Inside The Lobby Bar](include/img/lobby-bar.png){.lightbox} -->
-<!-- ::: -->
-<!-- :::: -->
+:::
 
-<!-- ::: -->
-
-
-<!-- ![](include/img/steinhart-danielle.jpg){width=100px height=100px} -->
-<!-- | [*LLMs with Jupyter notebooks*](sessions.qmd#llms-with-jupyter-notebooks) |  [Valerie Li](program-committee.qmd#valerie-li) | W211A | -->
-<!-- | [*Getting credit (Part III): Data papers*](#getting-credit-for-sharing-your-data-part-iii-data-papers) | [Alaina Pearce](directors.qmd#alaina-pearce) | Dewey Room | -->
-<!-- - [*Center for Social Data Analytics (SoDA)*](https://soda.la.psu.edu), [Bruce Desmarais](program-committee.qmd#bruce-desmarais); slides: | [pdf](include/pdf/soda_program_slides.pdf) | -->
-<!-- - [Kimberly Petrosky](presenters.qmd#kimberly-petrosky), Penn State Office of Research Protections -->
-<!-- - [Sarah Rajtmajer](program-committee.qmd#sarah-rajtmajer), College of IST & Rock Ethics Institute -->
-<!-- - [Sara Horn](presenters.qmd#sara-horn), Penn State Office of Research Protections -->
-<!-- - [Rick Gilmore](directors.qmd#rick-gilmore), Databrary -->
-<!-- - [Nicole Lazar](program-committee.qmd#nicole-lazar), Department of Statistics (Moderator) -->

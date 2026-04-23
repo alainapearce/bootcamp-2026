@@ -29,6 +29,8 @@ book:
     #     href: confirmation.qmd
       - text: "Installing Quarto"
         href: how-to-install-rstudio-quarto.qmd
+      - text: "Under the hood"
+        href: under-the-hood.qmd
     #   - resources.qmd
   repo-url: https://github.com/penn-state-open-science/bootcamp-2026/
   repo-actions: [edit, issue]
@@ -50,7 +52,10 @@ format:
     theme: [cosmo, include/css/psu.scss]
     number-sections: false
     date-modified: last-modified
-    bibliography: [include/bib/bootcamp.bib, include/bib/open-sci.bib]
+    bibliography:
+      - include/bib/bootcamp.bib
+      - include/bib/open-sci.bib
+      - include/bib/grateful-refs.bib
     csl: include/bib/apa.csl
     mainfont: roboto
     link-external-icon: true

@@ -1,0 +1,46 @@
+---
+format: html
+---
+
+# Under the hood
+
+## About
+
+This page provides additional information about how the website was created.
+
+## Overview
+
+The website uses [Quarto](https://quarto.org) to generate documents and GitHub pages to serve the site.
+
+The typical workflow is as follows:
+
+1. Merge any pending GitHub pull requests at `github.com/penn-state-open-science/bootcamp-2026`.
+2. From RStudio on a local machine, open the bootcamp-2026 project.
+3. Pull the merged code.
+4. Edit any files that need to be updated.
+5. Render specific Quarto files in a terminal using `quarto render this-file.qmd` or the entire site using `quarto render`.
+6. Inspect the rendered site in `docs/`.
+7. If further changes are needed, repeat 4-6.
+7. Commit the changes and push to GitHub.
+
+::: {.callout-note}
+You may inspect the Markdown for each page on the site by clicking on the `</> Code` button in the upper right.
+
+Pages with more extensive data processing (e.g., [registration.qmd](registration.qmd)) have "chunk-specific" buttons that hide and reveal the code.
+:::
+
+## Styles
+
+This site makes use of a Sassy Cascading Style Sheet (SCSS) that makes the site's styling compatible with Penn State's Strategic Communication recommendations for visual [identity](https://brand.la.psu.edu/visual-identity/), specifically color and typography.
+
+The file is located in [`include/css/psu.scss`](include/css/psu.scss).
+
+## Packages
+
+```{r}
+#| echo: false
+grateful::cite_packages(output = "paragraph", out.dir = "include/bib/")
+```
+
+## References
+

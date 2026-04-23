@@ -2,7 +2,7 @@ Dear Colleagues,
 
 Registration is now open for the 2026 Open Scholarship Bootcamp, Monday, May 11 and Tuesday, May 12, 2026 at the University Park campus.
 
-This immersive 2-day event is open to all Penn State faculty, staff, and students. It offers a hands-on introduction to practices that can enhance scholarly transparency, rigor, and impact.
+This immersive 2-day event is open to Penn State faculty, staff, and students and is especially well suited for graduate students, postdocs, and other early career researchers seeking practical tools for more transparent, rigorous, and reproducible scholarship. Through hands-on workshops and discussions, participants will gain experience with open scholarship workflows, ethical and practical issues in data sharing, knowledge about scholarship resources available at Penn State, and tools such as Quarto, Python, Jupyter Notebooks, and version control.
 
 Bootcamp Website & Agenda: https://penn-state-open-science.github.io/bootcamp-2026/
 
@@ -10,10 +10,10 @@ Register by May 1st here: https://forms.gle/myMCqAZsAHXQBy4n7
 
 The Bootcamp will cover:
 
+- Tools and workflows for reproducible research (R, R Markdown, Quarto, Python, Jupyter Notebooks, version control)
 - What open scholarship is and why it matters
 - Ethical and practical considerations of openness
 - Open scholarship and AI
-- Tools and workflows for reproducible research (including R, R Markdown, Quarto, Python, and Jupyter Notebooks)
 - How to manage data and get credit for sharing data and materials
 
 Enjoy continental breakfasts and light lunches (with vegan and vegetarian options), connect with colleagues, and develop practical skills to bring openness to your research.

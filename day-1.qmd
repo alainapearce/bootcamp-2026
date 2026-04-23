@@ -144,6 +144,3 @@ What's the difference? Who decides? How can researchers who share data widely pr
 ### 04:30 pm • End of Day 1 {-}
 
 ## References
-
-<!-- | [*Getting started with Python in JupyterLab: A hands-on introduction*](sessions.qmd#getting-started-with-python-in-jupyterlab-a-hands-on-introduction) | [Carrie Brown](program-committee.qmd#carrie-brown) | W211A | -->
-<!-- | [*Questionable research practices*](sessions.qmd#questionable-research-practices) |  [Nicole Lazar](program-committee.qmd#nicole-lazar) & [Jennifer Valcin](program-committee.qmd#jennifer-valcin) | Dewey Room |  -->

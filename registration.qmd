@@ -214,6 +214,9 @@ registrations_clean$dept[select_this] <- "Communication Sciences & Disorders"
 
 select_this <- registrations_clean$name == "Koraly Pérez-Edgar"
 registrations_clean$dept[select_this] <- "Psychology"
+
+select_this <- registrations_clean$name== "Keyana Enayati"
+registrations_clean$dept[select_this]  <- "PSU Harrisburg"
 ```
 
 Normalize department names; assign college/institute values.
@@ -306,7 +309,11 @@ registrations_clean <- registrations_clean |>
       `Computer Science` = "Computer Science & Engineering",
       `Department of Computer Science and Engineering` = "Computer Science & Engineering",
       `Ed Policy Studies` = "Education Policy Studies",
-      `CHE` = "Chemical Engineering"
+      `CHE` = "Chemical Engineering",
+      `Agricultural and Biological Engineering` = "Agricultural & Biological Engineering",
+      `Mechanical` = "Mechanical Engineering",
+      `Health Administration` = "Health Policy & Administration",
+      `CMPEN` = "Computer Engineering"
     )
   ) |>
   dplyr::mutate(
@@ -366,6 +373,7 @@ registrations_clean <- registrations_clean |>
       "Electrical Engineering & Comp Sci" ~ "Engineering",
       "Population Research Center" ~ "SSRI",
       "Psychology (Harrisburg)" ~ "PSU Harrisburg",
+      "PSU Harrisburg" ~ "PSU Harrisburg",
       "Business & Economics" ~ "PSU Brandywine",
       "Engineering" ~ "Engineering",
       "LPS/LDT" ~ "Education",
@@ -395,7 +403,12 @@ registrations_clean <- registrations_clean |>
       "Biomedical Engineering" ~ "Engineering",
       "Computer Science & Engineering" ~ "Engineering",
       "Education Policy Studies" ~ "Education",
-      "Chemical Engineering" ~ "Engineering"
+      "Chemical Engineering" ~ "Engineering",
+      "Agricultural & Biological Engineering" ~ "AgSci",
+      "Health Policy & Administration" ~ "HHD",
+      "Chemical/Biomedical Engineering" ~ "Engineering",
+      "College of Education" ~ "Education",
+      "Computer Engineering" ~ "Engineering"
     ),
     .default = "Unknown",
     .missing = "Unknown"

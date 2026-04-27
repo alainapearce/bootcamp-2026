@@ -3,8 +3,19 @@ title: "Schedule"
 format: html
 ---
 
-This section provides an overview about what is happening and when over the two-day bootcamp.
-See the detailed daily schedules for more information.
+## About
+
+:::: {.columns}
+::: {.column width=20%}
+![](include/img/osi-logo.jpg)
+:::
+::: {.column width=5%}
+:::
+::: {.column width=75%}
+This page provides an overview about what is happening and when over the two-day bootcamp.
+See the detailed daily schedules for more specific information about times and locations.
+:::
+::::
 
 ## Overview
 

@@ -1,6 +1,7 @@
 project:
   type: book
   output-dir: docs
+
   
 book:
   title: "Bootcamp 2026"
@@ -21,8 +22,8 @@ book:
       chapters:
       - text: "Session Details"
         href: sessions.qmd
-    #   - text: "Wayfinding"
-    #     href: wayfinding.qmd
+      - text: "Wayfinding"
+        href: wayfinding.qmd
       - text: "Registration Data"
         href: registration.qmd
     #   - text: "Confirmation Data"

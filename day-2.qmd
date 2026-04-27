@@ -4,10 +4,10 @@ format: html
 
 # Day 2 (Tues, May 12)
 
-::: {.callout-caution}
-## Work-in-progress
-This schedule is a work-in-progress and subject to change.
-:::
+<!-- ::: {.callout-caution} -->
+<!-- ## Work-in-progress -->
+<!-- This schedule is a work-in-progress and subject to change. -->
+<!-- ::: -->
 
 ## Morning {- #day_2_am}
 

@@ -46,7 +46,7 @@ format: html
 | Topic | Presenter | Location |
 |--------------|----------|-------|
 | [*Quarto (Part II): Making useful things reproducibly*](sessions.html#quarto-part-ii-making-useful-things-reproducibly) | [Rick Gilmore](directors.qmd#rick-gilmore) | W211A Pattee | 
-| [*Getting credit (Part III): Making your data citable*](http://localhost:7406/sessions.html#getting-credit-part-iii-making-your-data-citable) |  [Alaina Pearce](directors.qmd#alaina-pearce) & [Kyle Hallisky](presenters.qmd#kyle-hallisky) | Dewey Room |
+| [*Getting credit (Part III): Making your data citable*](sessions.html#getting-credit-part-iii-making-your-data-citable) |  [Alaina Pearce](directors.qmd#alaina-pearce) & [Kyle Hallisky](presenters.qmd#kyle-hallisky) | Dewey Room |
 
 : {tbl-colwidths="[60,20,20]"}
 

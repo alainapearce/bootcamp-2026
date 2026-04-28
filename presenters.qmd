@@ -55,8 +55,7 @@ Librarian with the Penn State University Libraries. He earned his doctoral degre
 ![](include/img/kyle-hallisky.jpeg){width=200px height=200px}
 :::
 ::: {.column width=50%}
-[Kyle Hallisky](https://libraries.psu.edu/directory/nmh5768) is Associate Dean for Distinctive Collections and Digital Strategies and
-Librarian with the Penn State University Libraries. He earned his doctoral degree in information science from the University of North Texas.
+[Kyle Hallisky](https://libraries.psu.edu/directory/nmh5768) is a PhD candidate in the Department of Nutritional Sciences .
 :::
 ::::
 

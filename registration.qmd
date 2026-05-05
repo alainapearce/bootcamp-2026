@@ -85,7 +85,7 @@ readr::write_csv(presenters, file = presenters_full_fn)
 
 ## Clean
 
-Google Forms conveniently returns the questions as variable names at the top of each column. These are handy for creating a data dictionary, but awkward for data processing. We rename these for our convenience. We also export a data dictionary.
+Google Forms conveniently returns the questions as variable names at the top of each column. These are handy for creating a data dictionary, but awkward for data processing. We rename these for our convenience. 
 
 ```{r}
 #| label: tbl-data-dictionary
@@ -101,7 +101,8 @@ registrations_clean <- registrations |>
     psu_email = "Email Address",
     dept = "What is your department or unit?",
     position = "What is your current position?",
-    comments = "Any comments?"
+    comments = "Any comments?",
+    dropped_out = "drop-out"
   )
 
 registrations_short <- c(
@@ -111,9 +112,15 @@ registrations_short <- c(
   "name",
   "dept",
   "position",
-  "comments"
+  "comments",
+  "dropped_out"
 )
-registrations_pid <- c(FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE)
+```
+
+We also export a data dictionary.
+
+```{r}
+registrations_pid <- c(FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE)
 
 registrations_dd <- data.frame(qs = reqistrations_qs, 
                                qs_short = registrations_short, 
@@ -135,6 +142,13 @@ registrations_clean <- registrations_clean |>
   dplyr::filter(psu_email != "nittany.amateur.radio.club@gmail.com")
 ```
 
+We normalize the `dropped_out` variable.
+
+```{r}
+registrations_clean <- registrations_clean |>
+  dplyr::mutate(dropped_out = if_else(is.na(dropped_out), FALSE, TRUE))
+```
+
 ## Visualize
 
 ### Registration numbers {-}
@@ -144,11 +158,13 @@ registrations_clean <- registrations_clean |>
 attendees_names <- registrations_clean$name
 presenter_names <- presenters$Presenter
 all_names <- unique(c(attendees_names, presenter_names))
+n_all <- length(all_names)
+n_drop_outs <- sum(registrations_clean$dropped_out)
 ```
 
-As of `r Sys.Date()`, we have *n*=`r dim(registrations_clean)[1]` registered attendees. We also have *n*=`r length(presenter_names)` presenters. A handful of presenters also registered, so we have *n*=`r length(all_names)` unique attendees who plan to come.
+As of `r Sys.Date()`, we have *n*=`r dim(registrations_clean)[1]` registered attendees. We also have *n*=`r length(presenter_names)` presenters. A handful of presenters also registered. Some people registered twice, and *n* = `r n_drop_outs` have had to cancel, so we have *n*=`r n_all - n_drop_outs` unique attendees who plan to come.
 
-That is `r round(100*(length(all_names))/75, 1)`\% of our target registration/attendance limit of *n*=75.
+That is `r round(100*(n_all - n_drop_outs)/75, 1)`\% of our target registration/attendance target of *n*=75.
 
 ### Time series {-}
 
@@ -196,7 +212,7 @@ registrations_clean |>
   dplyr::mutate(position = fct_reorder(position, n)) |>
   ggplot() +
   geom_bar(aes(x = position, y = n), fill = "#96BEE6", stat = "identity") +
-  scale_y_continuous(breaks = seq(0, 40, by = 5)) +
+  scale_y_continuous(breaks = seq(0, 50, by = 5)) +
   theme(legend.position = "right") +
   theme(legend.title = element_blank()) +
   xlab("") +
@@ -285,6 +301,8 @@ registrations_clean <- registrations_clean |>
       `Germanic and Slavic Languages and Literatures` = "German & Slavic Languages",
       
       `Nutrition` = "Nutritional Sciences",
+      `Department of Nutritional Sciences` = "Nutritional Sciences",
+      `Nurition` = "Nutritional Sciences",
       
       `College of IST` = "IST",
       
@@ -335,6 +353,7 @@ registrations_clean <- registrations_clean |>
       `Plant Pathology and environmental microbiology` = "Plant Pathology & Environmental Microbiology",
       
       `Meteorology and Atmospheric Sciences` = "Meteorology & Atmospheric Sciences",
+      `Department of Meteorology and Atmospheric Science` = "Meteorology & Atmospheric Sciences",
       
       `School of Labor and Employment Relations` = "School of Labor & Employment Relations",
 

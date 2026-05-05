@@ -40,7 +40,7 @@ book:
   page-footer:
     background: $theme-psu-pugh-blue
     left:
-      - text: "© 2026 by Rick Gilmore & Alaina Pearce under CC BY 4.0"
+      - text: "© 2026 Rick Gilmore & Alaina Pearce under CC BY 4.0"
         href: https://creativecommons.org/licenses/by/4.0/
     center: 
       - text: "Built with Quarto"

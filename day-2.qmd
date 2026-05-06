@@ -29,7 +29,8 @@ format: html
 | Topic | Presenter | Location |
 |--------------|----------|-------|
 | [*Harnessing advanced cyberinfrastructure for research: An introduction to Roar and ICDS resources*](sessions.html#harnessing-advanced-cyberinfrastructure-for-research-an-introduction-to-roar-and-icds-resources) | [Carrie Brown](program-committee.qmd#carrie-brown) | W211A Pattee |
-| [*Introduction to copyright and open access publishing*](sessions.html#introduction-to-copyright-and-open-access-publishing) | [Danielle Steinhart](presenters.qmd#danielle-steinhart) | Dewey Room |
+| [*Getting credit (Part III): Making your data citable*](sessions.html#getting-credit-part-iii-making-your-data-citable) |  [Alaina Pearce](directors.qmd#alaina-pearce) & [Kyle Hallisky](presenters.qmd#kyle-hallisky) | Dewey Room |
+
 
 : {tbl-colwidths="[60,20,20]"}
 
@@ -46,7 +47,7 @@ format: html
 | Topic | Presenter | Location |
 |--------------|----------|-------|
 | [*Quarto (Part II): Making useful things reproducibly*](sessions.html#quarto-part-ii-making-useful-things-reproducibly) | [Rick Gilmore](directors.qmd#rick-gilmore) | W211A Pattee | 
-| [*Getting credit (Part III): Making your data citable*](sessions.html#getting-credit-part-iii-making-your-data-citable) |  [Alaina Pearce](directors.qmd#alaina-pearce) & [Kyle Hallisky](presenters.qmd#kyle-hallisky) | Dewey Room |
+| [*Introduction to copyright and open access publishing*](sessions.html#introduction-to-copyright-and-open-access-publishing) | [Danielle Steinhart](presenters.qmd#danielle-steinhart) | Dewey Room |
 
 : {tbl-colwidths="[60,20,20]"}
 

@@ -391,7 +391,8 @@ registrations_clean <- registrations_clean |>
       `Civil Eng` = "Civil Engineering",
       
       `Meteorology and Atmospheric Science` = "Meteorology & Atmospheric Science",
-      `Meteorology & Atmospheric Sciences` = "Meteorology & Atmospheric Science"
+      `Meteorology and Atmospheric Sciences` = "Meteorology & Atmospheric Science",
+      `Department of Meteorology and Atmospheric Science` = "Meteorology & Atmospheric Science",
     )
   ) |>
   dplyr::mutate(
@@ -442,6 +443,7 @@ registrations_clean <- registrations_clean |>
       "Education Policy Studies" ~ "Education",
       
       "Meteorology & Atmospheric Science" ~ "EMS",
+      # "Meteorology & Atmospheric Sciences" ~ "EMS",
       
       "Acoustics" ~ "Engineering",
       "Biomedical Engineering" ~ "Engineering",

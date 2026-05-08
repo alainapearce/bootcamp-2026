@@ -1,0 +1,139 @@
+---
+title: "Sign-ins"
+code-fold: true
+params:
+    csv_dir: "private/csv"
+    registration_fn: "registrations-2026.csv"
+    presenters_fn: "presenters-2026.csv"
+    signins_fn: "signins-2026.csv"
+    sheets_fn: "Open Scholarship Bootcamp 2026: Registration (Responses)"
+    reg_sheets_id: "1mM0rSuFS5_y2sQtU9AI9zm8kuOGeDzilJZdu1MUR8zk"
+    psu_id: "rog1@psu.edu"
+---
+
+## About
+
+This page documents and implements the data processing workflow for bootcamp electronic sign-ins via the Qualtrics link: <https://pennstate.qualtrics.com/jfe/form/SV_5vdpIekRnWpfsBo>
+
+## Setup
+
+We load some packages into memory for convenience.
+
+```{r}
+#| label: load-packages
+suppressPackageStartupMessages(library('tidyverse'))
+suppressPackageStartupMessages(library('ggplot2'))
+suppressPackageStartupMessages(library('dplyr'))
+suppressPackageStartupMessages(library('tidyr'))
+suppressPackageStartupMessages(library('stringr'))
+suppressPackageStartupMessages(library('lubridate'))
+suppressPackageStartupMessages(library('janitor'))
+```
+
+## Gather
+
+```{r}
+#| label: import-data
+#| message: false
+#| 
+x <- assertthat::is.string(params$csv_dir)
+if (!dir.exists(params$csv_dir)) {
+  message("Creating missing `include/csv/`.")
+  dir.create(params$csv_dir)
+}
+x <- assertthat::is.writeable(params$csv_dir)
+
+x <- assertthat::is.string(params$psu_id)
+googlesheets4::gs4_auth(email = params$psu_id)
+
+# Sign-ins
+x <- assertthat::is.string(params$sheets_id)
+signins <- googlesheets4::read_sheet(params$reg_sheets_id,
+                                           sheet = "sign-ins")
+x <- assertthat::assert_that(is_tibble(signins))
+
+signins_full_fn <- file.path(params$csv_dir, params$signins_fn)
+x <- assertthat::is.string(signins_full_fn)
+
+# Registrations
+registration_full_fn <- file.path(params$csv_dir, params$registration_fn)
+x <- assertthat::is.string(registration_full_fn)
+x <- assertthat::is.readable(registration_full_fn)
+
+registrations <- readr::read_csv(file = registration_full_fn, show_col_types = FALSE)
+
+# Presenters
+presenters_full_fn <- file.path(params$csv_dir, params$presenters_fn)
+x <- assertthat::is.string(presenters_full_fn)
+x <- assertthat::is.readable(presenters_full_fn)
+
+presenters <- readr::read_csv(file = presenters_full_fn, show_col_types = FALSE)
+```
+
+Check that we downloaded data.
+
+```{r}
+dim(signins)
+
+dim(registrations)
+
+dim(presenters)
+```
+
+## Clean
+
+We need to clean the data file names.
+
+```{r}
+signins_clean <- janitor::clean_names(signins) |>
+  dplyr::rename("signin_date" = "date") |>
+  dplyr::mutate(name = paste0(first_name, " ", "last_name"))
+```
+
+```{r}
+registrations_clean <- registrations |>
+  dplyr::rename(
+    timestamp = "Timestamp",
+    attend_days = "Which days of the bootcamp will you attend?",
+    name = "What is your name?",
+    email = "Email Address",
+    dept = "What is your department or unit?",
+    position = "What is your current position?",
+    comments = "Any comments?",
+    dropped_out = "drop-out"
+  )
+```
+
+```{r}
+presenters_clean <- janitor::clean_names(presenters)
+```
+
+Show variable names prior to joining.
+
+```{r}
+names(signins_clean)
+```
+
+```{r}
+names(registrations_clean)
+```
+
+```{r}
+names(presenters_clean)
+```
+
+We have the following fields in common across the datasets: `name` & `email`.
+
+```{r}
+dfs <- list(signins_clean, registrations_clean, presenters_clean)
+
+signins_join <- dfs |>
+  purrr::reduce(left_join, by = c("email", "name"))
+```
+
+As of `r Sys.Date()`, we have had *n*=`r dim(signins_join)[1]` attendees and presenters sign in.
+
+```{r}
+#| label: save-signins-joined-csv
+readr::write_csv(signins_join, file.path(params$csv_dir, "bootcamp-2026-signins.csv"))
+```

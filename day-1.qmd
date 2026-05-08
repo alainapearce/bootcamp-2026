@@ -31,6 +31,8 @@ format: html
 
 ### 08:30 am • Breakfast {{< fa mug-hot >}} {{< fa bread-slice >}} {-}
 
+<!-- - Please [check in](https://pennstate.qualtrics.com/jfe/form/SV_5vdpIekRnWpfsBo) -->
+
 ### 09:00 am • Bootcamp Overview {-}
 
 Bootcamp Co-Directors

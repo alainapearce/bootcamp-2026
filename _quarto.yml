@@ -27,8 +27,8 @@ book:
         href: wayfinding.qmd
       - text: "Registration Data"
         href: registration.qmd
-    #   - text: "Confirmation Data"
-    #     href: confirmation.qmd
+      - text: "Sign-in Data"
+        href: signins.qmd
       - text: "Installing Quarto"
         href: how-to-install-rstudio-quarto.qmd
       - text: "Under the hood"

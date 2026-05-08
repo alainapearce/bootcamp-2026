@@ -1,0 +1,89 @@
+---
+title: "Open Scholarship Bootcamp 2026"
+subtitle: "Welcome • Day 1"
+format: 
+  revealjs:
+    logo: https://brand.psu.edu/images/backgrounds/penn-state-shield.jpg
+    theme:
+      - serif
+      - include/css/psu.scss
+    mainfont: roboto
+
+knitr:
+  opts_chunk:
+    fig.path: include/fig/ 
+---
+
+## Welcome! Please check in
+
+```{r}
+#| label: checkin-qr-code
+#| echo: false
+#| fig-align: "center"
+
+plot(qrcode::qr_code("https://pennstate.qualtrics.com/jfe/form/SV_5vdpIekRnWpfsBo"))
+```
+
+## Introductions
+
+## Logistics
+
+- Food
+- Toilets
+- Space
+
+## Schedule
+
+- [Day 1](day-1.qmd)
+- [Day 2](day-2.qmd)
+
+## Why are *you* here?
+
+::: {.fragment}
+![](https://scootsa1000momofthree.files.wordpress.com/2016/01/tumblr_mb50g9iouj1rhwredo1_500.gif){fig-align="center" width="60%"}
+:::
+
+## Why are *we* here?
+
+:::: {.columns}
+::: {.column width=50%}
+::: {.incremental}
+- Open is cool
+- Open is fun
+- Open is the future
+
+:::
+:::
+::: {.column width=50%}
+![](include/img/osi-logo.jpg){width="80%" fig-align="right"}
+:::
+::::
+
+## Thank you, sponsors!
+
+:::::: columns
+::: {.column width="50%"}
+![](include/img/csc-logo.png){fig-align="center"}
+:::
+::: {.column width="50%"}
+![](include/img/libraries.png){fig-align="center"}
+:::
+::::::
+
+:::: {.columns}
+::: {.column width=50%}
+![](include/img/icds.png){fig-align="center"}
+:::
+::: {.column width=50%}
+![](include/img/ssri-logo.png){fig-align="center"}
+:::
+::::
+
+:::: {.columns}
+::: {.column width=50%}
+![](include/img/psychology.png){fig-align="center"}
+:::
+::: {.column width=50%}
+![](include/img/statistics-dept.png){fig-align="center"}
+:::
+::::

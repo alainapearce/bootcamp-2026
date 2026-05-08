@@ -50,7 +50,7 @@ Effective data management is key to research integrity, reproducibility, and mak
 
 *Resources*:
 
-- Slides: | [Keynote Link](https://www.icloud.com/keynote/01avGzTTbIDfVVAWCC18p6HQg#2026S_goodenough_bootcap) |  [pptx](include/pptx/2026S_goodenough_bootcamp.pptx) |
+- Slides: | [Keynote Link](https://www.icloud.com/keynote/01avGzTTbIDfVVAWCC18p6HQg#2026S%5Fgoodenough%5Fbootcamp) |  [pptx](include/pptx/2026S_goodenough_bootcamp.pptx) |
 - Directory naming worksheet: | [pdf](include/pdf/rdm-strategy_worksheet.pdf) |
 - Data Inventory: | [pdf](include/pdf/dmsp-data_inventory.pdf) |
 
@@ -108,10 +108,10 @@ Just as important as sharing your data is how you document it. Metadata provides
 *Location*: Dewey Room
 
 *Resources*:
-
-<!-- - Slides: | [pdf](include/pdf/2025_DataSharing.pdf) |  [pptx](include/pptx/2025_DataSharing.pptx) | -->
+- Slides: | [Keynote Link](https://www.icloud.com/keynote/018YCLNi_SquwJfwAO6Vv6zyg#2026S%5Fmetadata%5Fbootcamp) |  [pptx](include/pptx/2026S_metadata_bootcamp.pptx) |
 - Sample data README: | [md](include/txt/cornell_data_readme.md) | [txt](include/txt/cornell_data_readme.txt) |
-- Sample Psych-DS dataset_description.json file: [json](include/txt/dataset_description.json) |
+- Psych-DS dataset_description.json file: [json](include/txt/dataset_description.json) |
+- Psych-DS R Demo: | [psychds-demo](include/zip/psychds-demo.zip)
 - FAIR Checklist: | [pdf](include/pdf/fair_checklist.pdf) |
 
 ## Day 2 • Tue May 12
@@ -172,12 +172,26 @@ Sharing data openly is a growing expectation in research but getting formal reco
 
 *Resources*:
 
-<!-- - Slides: | [pdf](include/pdf/2025_DataSharing.pdf) |  [pptx](include/pptx/2025_DataSharing.pptx) | -->
+- Slides: | [Keynote Link](https://www.icloud.com/keynote/031xFNedmOlFLU8hwGG0_7eIw#2026S%5Fsharing-datapaper%5Fbootcamp) |  [pptx](include/pptx/2026S_sharing-datapaper_bootcamp.pptx) |
 - FAIR Checklist: | [pdf](include/pdf/fair_checklist.pdf) |
 - Data Paper Worksheet: | [pdf](include/pdf/data_paper_worksheet.pdf) |
 - Data Paper Checklist: | [pdf](include/pdf/data_paper_checklist.pdf) |
 
 ---
+
+### Lunch and Learn
+
+#### Engaging with Social Media
+
+
+*Presenters*: [Courtney Witmer](presenters.qmdd#courtney-witmer)
+
+*Prerequisites*: None
+
+*Location*: Dewey Room
+
+---
+
 
 ### Workshop Session 5
 
@@ -197,18 +211,11 @@ This session introduces participants to questionable research practices (QRPs) a
 
 #### Introduction to Python and Jupyter Notebooks
 
-Curious about Python and how to get started with coding? Join us for a one-hour, hands-on workshop introducing Python programming using JupyterLab. Designed for beginners, this session will guide you through the basics of Python using interactive example notebooks. You'll gain experience navigating the JupyterLab environment while working through live code, and you'll leave with a set of curated notebooks you can continue exploring on your own. No prior programming experience required!
+This one-hour, hands-on workshop offers an introduction to Python programming using the JupyterLab environment. Designed for participants with no prior coding experience, the session covers the foundational building blocks of Python, including variables, data types, arithmetic operations, strings, lists, conditional statements, and loops. Working through interactive example notebooks, attendees will gain practical experience navigating JupyterLab and executing live code in real time. The session concludes with a brief demonstration of data visualization to illustrate the broader capabilities of Python in research and analysis. Participants will leave with a set of curated notebooks for continued self-paced exploration. A laptop with internet access is required; no software installation is necessary, as all materials can be run in Google Colab.
 
 *Presenter*: [Kadir Cihan Duran](presenters.qmd#kadir-cihan-duran)
 
-#### Engaging with Social Media
-
-
-*Presenters*: [Courtney Witmer](presenters.qmdd#courtney-witmer)
-
-*Prerequisites*: None
-
-*Location*: Dewey Room
+- GitHub [Repo](https://github.com/kadircihanduran/python-jupyter-bootcamp-2026.git)
 
 ---
 

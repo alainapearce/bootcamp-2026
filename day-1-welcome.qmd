@@ -26,10 +26,13 @@ plot(qrcode::qr_code("https://pennstate.qualtrics.com/jfe/form/SV_5vdpIekRnWpfsB
 
 ## Introductions
 
+- Directors
+- [Program committee](program-committee.qmd)
+
 ## Logistics
 
 - Food
-- Toilets
+- Bathrooms
 - Space
 
 ## Schedule

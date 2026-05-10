@@ -3,8 +3,8 @@ title: "Sign-ins"
 code-fold: true
 params:
     csv_dir: "private/csv"
-    registration_fn: "registrations-2026.csv"
-    presenters_fn: "presenters-2026.csv"
+    registration_fn: "registrations-2026-clean.csv"
+    presenters_fn: "presenters-2026-clean.csv"
     signins_fn: "signins-2026.csv"
     sheets_fn: "Open Scholarship Bootcamp 2026: Registration (Responses)"
     reg_sheets_id: "1mM0rSuFS5_y2sQtU9AI9zm8kuOGeDzilJZdu1MUR8zk"
@@ -21,13 +21,8 @@ We load some packages into memory for convenience.
 
 ```{r}
 #| label: load-packages
-suppressPackageStartupMessages(library('tidyverse'))
 suppressPackageStartupMessages(library('ggplot2'))
-suppressPackageStartupMessages(library('dplyr'))
-suppressPackageStartupMessages(library('tidyr'))
-suppressPackageStartupMessages(library('stringr'))
-suppressPackageStartupMessages(library('lubridate'))
-suppressPackageStartupMessages(library('janitor'))
+suppressPackageStartupMessages(library('tidyverse'))
 ```
 
 ## Gather
@@ -60,7 +55,8 @@ registration_full_fn <- file.path(params$csv_dir, params$registration_fn)
 x <- assertthat::is.string(registration_full_fn)
 x <- assertthat::is.readable(registration_full_fn)
 
-registrations <- readr::read_csv(file = registration_full_fn, show_col_types = FALSE)
+# Import "cleaned" registrations file
+registrations_clean <- readr::read_csv(file = registration_full_fn, show_col_types = FALSE)
 
 # Presenters
 presenters_full_fn <- file.path(params$csv_dir, params$presenters_fn)
@@ -75,7 +71,7 @@ Check that we downloaded data.
 ```{r}
 dim(signins)
 
-dim(registrations)
+dim(registrations_clean)
 
 dim(presenters)
 ```
@@ -87,21 +83,21 @@ We need to clean the data file names.
 ```{r}
 signins_clean <- janitor::clean_names(signins) |>
   dplyr::rename("signin_date" = "date") |>
-  dplyr::mutate(name = paste0(first_name, " ", "last_name"))
+  dplyr::mutate(name = paste0(first_name, " ", last_name))
 ```
 
 ```{r}
-registrations_clean <- registrations |>
-  dplyr::rename(
-    timestamp = "Timestamp",
-    attend_days = "Which days of the bootcamp will you attend?",
-    name = "What is your name?",
-    email = "Email Address",
-    dept = "What is your department or unit?",
-    position = "What is your current position?",
-    comments = "Any comments?",
-    dropped_out = "drop-out"
-  )
+# registrations_clean <- registrations |>
+#   dplyr::rename(
+#     timestamp = "Timestamp",
+#     attend_days = "Which days of the bootcamp will you attend?",
+#     name = "What is your name?",
+#     email = "Email Address",
+#     dept = "What is your department or unit?",
+#     position = "What is your current position?",
+#     comments = "Any comments?",
+#     dropped_out = "drop-out"
+#   )
 ```
 
 ```{r}
@@ -122,18 +118,46 @@ names(registrations_clean)
 names(presenters_clean)
 ```
 
-We have the following fields in common across the datasets: `name` & `email`.
+Join `registrations_clean` and `presenters_clean`.
 
 ```{r}
-dfs <- list(signins_clean, registrations_clean, presenters_clean)
-
-signins_join <- dfs |>
-  purrr::reduce(left_join, by = c("email", "name"))
+people <- dplyr::full_join(registrations_clean, presenters_clean, by = NULL, copy = TRUE)
 ```
 
-As of `r Sys.Date()`, we have had *n*=`r dim(signins_join)[1]` attendees and presenters sign in.
+We have the following fields in common across the datasets: `name`, `email`.
+
+```{r}
+people_signed_in <- dplyr::full_join(signins_clean, people, by = NULL, copy = TRUE)
+```
 
 ```{r}
 #| label: save-signins-joined-csv
-readr::write_csv(signins_join, file.path(params$csv_dir, "bootcamp-2026-signins.csv"))
+readr::write_csv(people_signed_in, file.path(params$csv_dir, "bootcamp-2026-signins.csv"))
+```
+
+## Report
+
+```{r}
+
+```
+
+As of `r Sys.Date()`, we have had *n*=`r sum(!is.na(people_signed_in$signin_date))` attendees and presenters sign in.
+
+Here is the distribution of units.
+
+```{r}
+#| label: fig-checkins-coll
+#| fig-cap: "Check-ins by college/unit."
+ people_signed_in |>
+   dplyr::filter(!is.na(signin_date)) |>
+   dplyr::count(college, sort = TRUE) |>
+   dplyr::mutate(college = fct_reorder(college, n)) |>
+   ggplot() +
+   geom_bar(aes(x = college, y = n), fill = "#BF8226", stat = "identity") +
+   scale_y_continuous(breaks = seq(2, 24, by = 2)) +
+   theme(legend.position = "right") +
+   theme(legend.title = element_blank()) +
+   xlab("") +
+   theme_classic() +
+   coord_flip()
 ```

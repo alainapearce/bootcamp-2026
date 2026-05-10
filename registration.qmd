@@ -98,7 +98,7 @@ registrations_clean <- registrations |>
     timestamp = "Timestamp",
     attend_days = "Which days of the bootcamp will you attend?",
     name = "What is your name?",
-    psu_email = "Email Address",
+    email = "Email Address",
     dept = "What is your department or unit?",
     position = "What is your current position?",
     comments = "Any comments?",
@@ -107,7 +107,7 @@ registrations_clean <- registrations |>
 
 registrations_short <- c(
   "timestamp",
-  "psu_email",
+  "email",
   "attend_days",
   "name",
   "dept",
@@ -135,11 +135,18 @@ readr::write_csv(registrations_dd,
                  file = data_dict_fn)
 ```
 
-We drop some of responses that were used to test the workflow.
+We drop some of responses that were used to test the workflow or who are presenters.
 
 ```{r}
 registrations_clean <- registrations_clean |>
-  dplyr::filter(psu_email != "nittany.amateur.radio.club@gmail.com")
+  dplyr::filter(email != "nittany.amateur.radio.club@gmail.com")
+
+registrations_clean <- registrations_clean |>
+  dplyr::filter(name != "Koraly Pérez-Edgar") |>
+  dplyr::filter(name != "Carrie Brown")
+
+registrations_clean <- registrations_clean |>
+  dplyr::mutate(name = if_else(name == "Maria A Sanchez Farran", "Maria Sanchez Farran", name))
 ```
 
 We normalize the `dropped_out` variable.
@@ -149,6 +156,12 @@ registrations_clean <- registrations_clean |>
   dplyr::mutate(dropped_out = if_else(is.na(dropped_out), FALSE, TRUE))
 ```
 
+And normalize the presenter names.
+
+```{r}
+presenters_clean <- janitor::clean_names(presenters)
+```
+
 ## Visualize
 
 ### Registration numbers {-}
@@ -156,7 +169,7 @@ registrations_clean <- registrations_clean |>
 ```{r}
 #| label: create-subsetted-dfs
 attendees_names <- registrations_clean$name
-presenter_names <- presenters$Presenter
+presenter_names <- presenters$name
 all_names <- unique(c(attendees_names, presenter_names))
 n_all <- length(all_names)
 n_drop_outs <- sum(registrations_clean$dropped_out)
@@ -391,6 +404,7 @@ registrations_clean <- registrations_clean |>
       `Meteorology and Atmospheric Science` = "Meteorology & Atmospheric Science",
       `Meteorology and Atmospheric Sciences` = "Meteorology & Atmospheric Science",
       `Department of Meteorology and Atmospheric Science` = "Meteorology & Atmospheric Science",
+      `Meteorology & Atmospheric Sciences` = "Meteorology & Atmospheric Science"
     )
   ) |>
   dplyr::mutate(
@@ -537,3 +551,12 @@ registrations_clean |>
 ```
 
 The bootcamp registrations represent *n*=`r length(unique(registrations_clean$dept))` departments and *n*=`r length(unique(registrations_clean$college))` campuses, colleges, institutes, or administrative entities.
+
+### Save cleaned files
+
+```{r}
+readr::write_csv(registrations_clean, file.path(params$csv_dir, "registrations-2026-clean.csv"))
+
+readr::write_csv(presenters_clean, file.path(params$csv_dir, "presenters-2026-clean.csv"))
+```
+

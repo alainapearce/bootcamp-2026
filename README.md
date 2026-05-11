@@ -13,6 +13,7 @@ This repository contains files related to the Open Scholarship Bootcamp held at 
 
 ### Rendering
 
+- Within R or RStudio, install the `renv` package using `install.packages("renv")` command at the R console.
 - Clone or fork the repository; we recommend using a new RStudio project.
 - From the project's root directory, run `renv::restore()` to add package dependencies. You may need to install `renv` first via `install.packages('renv')`. You may also need `rtools`, so `install.packages('rtools')`.
 - From a terminal run `quarto render` to render the source files.

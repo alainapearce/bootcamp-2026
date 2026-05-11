@@ -27,6 +27,11 @@ suppressPackageStartupMessages(library('tidyverse'))
 
 ## Gather
 
+The registrations and presenters data are extracted as part of the [registrations](registration.qmd) workflow and saved as CSVs.
+We'll import those.
+
+The `sign-ins` tab contains the sign-ins data and must be retrieved from Google Forms.
+
 ```{r}
 #| label: import-data
 #| message: false
@@ -87,20 +92,6 @@ signins_clean <- janitor::clean_names(signins) |>
 ```
 
 ```{r}
-# registrations_clean <- registrations |>
-#   dplyr::rename(
-#     timestamp = "Timestamp",
-#     attend_days = "Which days of the bootcamp will you attend?",
-#     name = "What is your name?",
-#     email = "Email Address",
-#     dept = "What is your department or unit?",
-#     position = "What is your current position?",
-#     comments = "Any comments?",
-#     dropped_out = "drop-out"
-#   )
-```
-
-```{r}
 presenters_clean <- janitor::clean_names(presenters)
 ```
 
@@ -130,6 +121,14 @@ We have the following fields in common across the datasets: `name`, `email`.
 people_signed_in <- dplyr::full_join(signins_clean, people, by = NULL, copy = TRUE)
 ```
 
+Modify `people_signed_in` to flag people who did not register in advance, but came to the workshop.
+
+```{r}
+people_signed_in <- people_signed_in |>
+  dplyr::mutate(signin_noregister = if_else((!is.na(signin_date) &
+                                               is.na(timestamp)), TRUE, FALSE))
+```
+
 ```{r}
 #| label: save-signins-joined-csv
 readr::write_csv(people_signed_in, file.path(params$csv_dir, "bootcamp-2026-signins.csv"))
@@ -138,6 +137,7 @@ readr::write_csv(people_signed_in, file.path(params$csv_dir, "bootcamp-2026-sign
 ## Report
 
 As of `r Sys.Date()`, we have had *n*=`r sum(!is.na(people_signed_in$signin_date))` attendees and presenters sign in.
+Of these, *n*=`r sum(people_signed_in$signin_noregister)` attended but did not register in advance.
 
 Here is the distribution of units.
 
@@ -145,7 +145,8 @@ Here is the distribution of units.
 #| label: fig-checkins-coll
 #| fig-cap: "Check-ins by college/unit."
  people_signed_in |>
-   dplyr::filter(!is.na(signin_date)) |>
+   dplyr::filter(!is.na(signin_date),
+                 !is.na(college)) |>
    dplyr::count(college, sort = TRUE) |>
    dplyr::mutate(college = fct_reorder(college, n)) |>
    ggplot() +

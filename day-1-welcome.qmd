@@ -17,12 +17,23 @@ knitr:
 ## Welcome! Please check in
 
 ```{r}
-#| label: checkin-qr-code
+#| label: fig-checkin-qr-code
 #| echo: false
 #| fig-align: "center"
 
 plot(qrcode::qr_code("https://pennstate.qualtrics.com/jfe/form/SV_5vdpIekRnWpfsBo"))
 ```
+
+## Bootcamp schedule
+
+```{r}
+#| label: fig-schedule-qr-code
+#| echo: false
+#| fig-align: "center"
+
+plot(qrcode::qr_code("https://penn-state-open-science.github.io/bootcamp-2026/"))
+```
+
 
 ## Introductions
 

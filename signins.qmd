@@ -137,10 +137,6 @@ readr::write_csv(people_signed_in, file.path(params$csv_dir, "bootcamp-2026-sign
 
 ## Report
 
-```{r}
-
-```
-
 As of `r Sys.Date()`, we have had *n*=`r sum(!is.na(people_signed_in$signin_date))` attendees and presenters sign in.
 
 Here is the distribution of units.

@@ -455,7 +455,7 @@ registrations_clean <- registrations_clean |>
       "Education Policy Studies" ~ "Education",
       
       "Meteorology & Atmospheric Science" ~ "EMS",
-      # "Meteorology & Atmospheric Sciences" ~ "EMS",
+      "Meteorology & Atmospheric Sciences" ~ "EMS",
       
       "Acoustics" ~ "Engineering",
       "Biomedical Engineering" ~ "Engineering",

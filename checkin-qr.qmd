@@ -1,0 +1,11 @@
+# Please check in here:
+
+```{r}
+#| label: checkin-qr-code
+#| echo: false
+#| fig-align: "center"
+
+plot(qrcode::qr_code("https://pennstate.qualtrics.com/jfe/form/SV_5vdpIekRnWpfsBo"))
+```
+
+![](include/img/osi-logo.jpg){width="50%" fig-align="center"}

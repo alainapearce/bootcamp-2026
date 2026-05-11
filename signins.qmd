@@ -126,7 +126,9 @@ Modify `people_signed_in` to flag people who did not register in advance, but ca
 ```{r}
 people_signed_in <- people_signed_in |>
   dplyr::mutate(signin_noregister = if_else((!is.na(signin_date) &
-                                               is.na(timestamp)), TRUE, FALSE))
+                                               is.na(timestamp)), TRUE, FALSE),
+                register_nosignin = if_else((is.na(signin_date) &
+                                               !is.na(timestamp)), TRUE, FALSE))
 ```
 
 ```{r}
@@ -138,6 +140,7 @@ readr::write_csv(people_signed_in, file.path(params$csv_dir, "bootcamp-2026-sign
 
 As of `r Sys.Date()`, we have had *n*=`r sum(!is.na(people_signed_in$signin_date))` attendees and presenters sign in.
 Of these, *n*=`r sum(people_signed_in$signin_noregister)` attended but did not register in advance.
+*N*=`r sum(people_signed_in$register_nosignin)` registered or committed to present but did not sign-in.
 
 Here is the distribution of units.
 

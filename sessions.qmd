@@ -198,7 +198,6 @@ Sharing data openly is a growing expectation in research but getting formal reco
 
 ---
 
-
 ### Workshop Session 5
 
 #### From questionable to credible: Responsible and robust research in the age of AI

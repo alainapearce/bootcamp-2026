@@ -161,6 +161,7 @@ Rick Gilmore will show how to build useful scholarly products in a reproducible 
 *Resources*: 
 
 - Slides: | [html](https://penn-state-open-science.github.io/bootcamp-2026-quarto-II/) |
+- GitHub repo: <https://github.com/penn-state-open-science/bootcamp-2026-quarto-II/>
 
 ---
 

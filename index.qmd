@@ -23,18 +23,31 @@ The Dewey Room on Ground floor of the Collaboration Commons in (W043) Pattee Lib
 
 ![](include/img/psu_pattee_gallery2.jpg)
 
-## Registration
+## Participation
 
-The Bootcamp is **full**. 
-Any registrations from now on will be considered additions to the waiting list. 
-If you previously registered and do not plan to attend, please email [Alaina Pearce](directors.qmd#alaina-pearce) so that another person can attend in your place.
+Here are some graphs that visualize data from Bootcamp attendees.
 
-::: callout-important
-## To register
-Visit <https://forms.gle/myMCqAZsAHXQBy4n7>.
+::: {.panel-tabset}
+## Monday, May 11
+
+![](include/fig/fig-checkins-coll-mon-1.png)
+
+## Tuesday, May 12
+
+![](include/fig/fig-checkins-coll-tue-1.png)
+
 :::
 
-![Data about the home colleges or units of registered participants. See [Registration Data](registration.qmd) for details.](include/fig/fig-regis-dept-coll-1.png){#fig-registration-units width="75%"}
+<!-- The Bootcamp is **full**.  -->
+<!-- Any registrations from now on will be considered additions to the waiting list.  -->
+<!-- If you previously registered and do not plan to attend, please email [Alaina Pearce](directors.qmd#alaina-pearce) so that another person can attend in your place. -->
+
+<!-- ::: callout-important -->
+<!-- ## To register -->
+<!-- Visit <https://forms.gle/myMCqAZsAHXQBy4n7>. -->
+<!-- ::: -->
+
+<!-- ![Data about the home colleges or units of registered participants. See [Registration Data](registration.qmd) for details.](include/fig/fig-regis-dept-coll-1.png){#fig-registration-units width="75%"} -->
 
 ## Support
 

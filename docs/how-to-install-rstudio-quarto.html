@@ -273,10 +273,10 @@ div.csl-indent {
   <ul>
   <li><a href="#about" id="toc-about" class="nav-link active" data-scroll-target="#about">About</a></li>
   <li><a href="#install-r" id="toc-install-r" class="nav-link" data-scroll-target="#install-r">Install R</a></li>
+  <li><a href="#optional-install-git" id="toc-optional-install-git" class="nav-link" data-scroll-target="#optional-install-git">(Optional) Install git</a></li>
   <li><a href="#install-rstudio" id="toc-install-rstudio" class="nav-link" data-scroll-target="#install-rstudio">Install RStudio</a></li>
   <li><a href="#install-quarto" id="toc-install-quarto" class="nav-link" data-scroll-target="#install-quarto">Install Quarto</a></li>
   <li><a href="#launch-rstudio" id="toc-launch-rstudio" class="nav-link" data-scroll-target="#launch-rstudio">Launch RStudio</a></li>
-  <li><a href="#optional-install-git" id="toc-optional-install-git" class="nav-link" data-scroll-target="#optional-install-git">(Optional) Install git</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/penn-state-open-science/bootcamp-2026/edit/main/src/how-to-install-rstudio-quarto.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/penn-state-open-science/bootcamp-2026/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -298,7 +298,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">February 27, 2026</p>
+      <p class="date-modified">May 12, 2026</p>
     </div>
   </div>
     
@@ -323,6 +323,13 @@ div.csl-indent {
 </figure>
 </div>
 </section>
+<section id="optional-install-git" class="level2">
+<h2 class="anchored" data-anchor-id="optional-install-git">(Optional) Install git</h2>
+<p>The version control package git may not be installed on your Windows machine. It is usually installed by default on Mac OS.</p>
+<p>If git is not installed, follow these instructions for installing git on your system are <a href="https://happygitwithr.com/install-git">here</a>.</p>
+<p>You can use R, RStudio, and Quarto without using git, but there are good reasons to consider using it.</p>
+<p>If you decide to use the web-based git code sharing service called <a href="https://github.com">GitHub</a> with RStudio, you will want to follow the excellent instructions <a href="https://happygitwithr.com">here</a>.</p>
+</section>
 <section id="install-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="install-rstudio">Install RStudio</h2>
 <div class="quarto-figure quarto-figure-center">
@@ -344,13 +351,8 @@ div.csl-indent {
 <section id="launch-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="launch-rstudio">Launch RStudio</h2>
 <p><img src="include/img/rstudio-open.png" class="img-fluid"></p>
-</section>
-<section id="optional-install-git" class="level2">
-<h2 class="anchored" data-anchor-id="optional-install-git">(Optional) Install git</h2>
-<p>The version control package git may not be installed on your Windows machine. It is usually installed by default on Mac OS.</p>
-<p>If git is not installed, visit <a href="https://git-scm.com/downloads" class="uri">https://git-scm.com/downloads</a>, download, and install it for your operating system.</p>
-<p>You can use R, RStudio, and Quarto without using git, but there are good reasons to consider using it.</p>
-<p>If you decide to use the web-based git code sharing service called <a href="https://github.com">GitHub</a> with RStudio, you will want to follow the excellent instructions <a href="https://happygitwithr.com">here</a>.</p>
+<p>Confirm that R Studio can access git by opening Tools/Global Options menu item.</p>
+<p><img src="include/img/rstudio-tools-global-options.png" class="img-fluid"> Select Git/SVN from the left panel. Confirm that “Enable version control interface for RStudio projects” is checked and that there is an entry in the box under “Git executable:”.</p>
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
@@ -794,29 +796,36 @@ div.csl-indent {
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="al">![&lt;https://cran.rstudio.com&gt;](include/img/cran-r.png)</span></span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Install RStudio</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## (Optional) Install git</span></span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="al">![&lt;https://posit.co/download/rstudio-desktop/&gt;](include/img/install-rstudio.png)</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## Install Quarto</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="al">![&lt;https://quarto.org/docs/get-started/&gt;](include/img/install-quarto.png)</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">## Launch RStudio</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="al">![](include/img/rstudio-open.png)</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="fu">## (Optional) Install git</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>The version control package git may not be installed on your Windows machine. It is usually installed by default on Mac OS.</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>If git is not installed, visit <span class="ot">&lt;https://git-scm.com/downloads&gt;</span>, download, and install it for your operating system.</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>You can use R, RStudio, and Quarto without using git, but there are good reasons to consider using it.</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>If you decide to use the web-based git code sharing service called <span class="co">[</span><span class="ot">GitHub</span><span class="co">](https://github.com)</span> with RStudio, you will want to follow the excellent instructions <span class="co">[</span><span class="ot">here</span><span class="co">](https://happygitwithr.com)</span>.</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>The version control package git may not be installed on your Windows machine. </span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>It is usually installed by default on Mac OS.</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>If git is not installed, follow these instructions for installing git on your system are <span class="co">[</span><span class="ot">here</span><span class="co">](https://happygitwithr.com/install-git)</span>. </span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>You can use R, RStudio, and Quarto without using git, but there are good reasons to consider using it.</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>If you decide to use the web-based git code sharing service called <span class="co">[</span><span class="ot">GitHub</span><span class="co">](https://github.com)</span> with RStudio, you will want to follow the excellent instructions <span class="co">[</span><span class="ot">here</span><span class="co">](https://happygitwithr.com)</span>.</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="fu">## Install RStudio</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="al">![&lt;https://posit.co/download/rstudio-desktop/&gt;](include/img/install-rstudio.png)</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="fu">## Install Quarto</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="al">![&lt;https://quarto.org/docs/get-started/&gt;](include/img/install-quarto.png)</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="fu">## Launch RStudio</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="al">![](include/img/rstudio-open.png)</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>Confirm that R Studio can access git by opening Tools/Global Options menu item.</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="al">![](include/img/rstudio-tools-global-options.png)</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>Select Git/SVN from the left panel.</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>Confirm that "Enable version control interface for RStudio projects" is checked and that there is an entry in the box under "Git executable:".</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

@@ -14,6 +14,17 @@ If you plan to attend either the [Quarto I](sessions.qmd#quarto-part-i-a-tool-fo
 
 ![<https://cran.rstudio.com>](include/img/cran-r.png)
 
+## (Optional) Install git
+
+The version control package git may not be installed on your Windows machine. 
+It is usually installed by default on Mac OS.
+
+If git is not installed, follow these instructions for installing git on your system are [here](https://happygitwithr.com/install-git). 
+
+You can use R, RStudio, and Quarto without using git, but there are good reasons to consider using it.
+
+If you decide to use the web-based git code sharing service called [GitHub](https://github.com) with RStudio, you will want to follow the excellent instructions [here](https://happygitwithr.com).
+
 ## Install RStudio
 
 ![<https://posit.co/download/rstudio-desktop/>](include/img/install-rstudio.png)
@@ -26,14 +37,11 @@ If you plan to attend either the [Quarto I](sessions.qmd#quarto-part-i-a-tool-fo
 
 ![](include/img/rstudio-open.png)
 
-## (Optional) Install git
+Confirm that R Studio can access git by opening Tools/Global Options menu item.
 
-The version control package git may not be installed on your Windows machine. It is usually installed by default on Mac OS.
+![](include/img/rstudio-tools-global-options.png)
 
-If git is not installed, visit <https://git-scm.com/downloads>, download, and install it for your operating system.
-
-You can use R, RStudio, and Quarto without using git, but there are good reasons to consider using it.
-
-If you decide to use the web-based git code sharing service called [GitHub](https://github.com) with RStudio, you will want to follow the excellent instructions [here](https://happygitwithr.com).
+Select Git/SVN from the left panel.
+Confirm that "Enable version control interface for RStudio projects" is checked and that there is an entry in the box under "Git executable:".
 
 ## References

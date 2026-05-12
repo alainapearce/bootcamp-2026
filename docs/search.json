@@ -689,7 +689,7 @@
     "href": "how-to-install-rstudio-quarto.html#launch-rstudio",
     "title": "How to install RStudio & Quarto",
     "section": "Launch RStudio",
-    "text": "Launch RStudio",
+    "text": "Launch RStudio\n\nConfirm that R Studio can access git by opening Tools/Global Options menu item.\n Select Git/SVN from the left panel. Confirm that “Enable version control interface for RStudio projects” is checked and that there is an entry in the box under “Git executable:”.",
     "crumbs": [
       "More",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Installing Quarto</span>"
@@ -700,7 +700,7 @@
     "href": "how-to-install-rstudio-quarto.html#optional-install-git",
     "title": "How to install RStudio & Quarto",
     "section": "(Optional) Install git",
-    "text": "(Optional) Install git\nThe version control package git may not be installed on your Windows machine. It is usually installed by default on Mac OS.\nIf git is not installed, visit https://git-scm.com/downloads, download, and install it for your operating system.\nYou can use R, RStudio, and Quarto without using git, but there are good reasons to consider using it.\nIf you decide to use the web-based git code sharing service called GitHub with RStudio, you will want to follow the excellent instructions here.",
+    "text": "(Optional) Install git\nThe version control package git may not be installed on your Windows machine. It is usually installed by default on Mac OS.\nIf git is not installed, follow these instructions for installing git on your system are here.\nYou can use R, RStudio, and Quarto without using git, but there are good reasons to consider using it.\nIf you decide to use the web-based git code sharing service called GitHub with RStudio, you will want to follow the excellent instructions here.",
     "crumbs": [
       "More",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Installing Quarto</span>"

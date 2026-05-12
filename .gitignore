@@ -9,3 +9,5 @@ bootcamp-2026.Rproj
 **/*.quarto_ipynb
 .positai
 *.csv
+
+include/.DS_Store

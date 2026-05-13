@@ -26,6 +26,10 @@ Hear more about this exciting new program and learning opportunity from one of i
 
 *Location*: Dewey Room
 
+*Resources*:
+
+Slides: [pdf](include/pdf/RDS_OpenScholarshipBootcamp.pdf)
+
 ### Open @ Penn State
 
 What initiatives and resources are available at Penn State related to open scholarship?

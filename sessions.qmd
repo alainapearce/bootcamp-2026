@@ -34,6 +34,16 @@ What initiatives and resources are available at Penn State related to open schol
 
 ---
 
+### Keynote
+
+#### Responsible science at scale: Lessons for everyone from baby research and (really) large collaborations
+
+*Presenter*: [Melissa Kline Struhl](presenters.qmd#melissa-kline-struhl)
+
+*Resources*:
+
+Slides: [pdf](include/pdf/2026PennStateBootcamp-MKSslides.pdf)
+
 ### Workshop Session 1
 
 #### Getting credit (Part I): Good enough data practices
@@ -71,6 +81,10 @@ This workshop is intentionally designed as a conceptual on-ramp with no prior Gi
 *Skill level*: All
 
 *Location*: W211A Pattee
+
+*Resources*:
+
+Slides: [pptx](include/pptx/VersionControlwithGit.pptx)
 
 ---
 
@@ -134,6 +148,9 @@ Join us for a workshop exploring the powerful computational and data resources a
 
 *Location*: W211A Pattee
 
+*Resources*:
+Slides: [pptx](include/pptx/IntrotoHPCusingRC.pptx)
+
 ---
 
 #### Introduction to copyright and open access publishing {-}
@@ -179,10 +196,10 @@ Sharing data openly is a growing expectation in research but getting formal reco
 
 *Resources*:
 
-- Slides: | [Keynote Link](https://www.icloud.com/keynote/031xFNedmOlFLU8hwGG0_7eIw#2026S%5Fsharing-datapaper%5Fbootcamp) |  [pptx](include/pptx/2026S_sharing-datapaper_bootcamp.pptx) |
-- FAIR Checklist: | [pdf](include/pdf/fair_checklist.pdf) |
-- Data Paper Worksheet: | [pdf](include/pdf/data_paper_worksheet.pdf) |
-- Data Paper Checklist: | [pdf](include/pdf/data_paper_checklist.pdf) |
+- Slides: [Keynote Link](https://www.icloud.com/keynote/031xFNedmOlFLU8hwGG0_7eIw#2026S%5Fsharing-datapaper%5Fbootcamp) |  [pptx](include/pptx/2026S_sharing-datapaper_bootcamp.pptx) 
+- FAIR Checklist: [pdf](include/pdf/fair_checklist.pdf) 
+- Data Paper Worksheet: [pdf](include/pdf/data_paper_worksheet.pdf) 
+- Data Paper Checklist: [pdf](include/pdf/data_paper_checklist.pdf) 
 
 ---
 
@@ -196,6 +213,9 @@ Sharing data openly is a growing expectation in research but getting formal reco
 *Prerequisites*: None
 
 *Location*: Dewey Room
+
+*Resources*:
+- Slides: [pptx](include/pptx/BeingOnline.pptx)
 
 ---
 

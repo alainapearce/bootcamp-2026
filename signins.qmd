@@ -146,6 +146,8 @@ tue_signins <- people_signed_in |>
   dplyr::filter(stringr::str_detect(as.character(signin_date), "2026-05-12"))
 ```
 
+::: {.panel-tabset}
+
 ### Monday, May 11
 
 We had *n*=`r sum(!is.na(mon_signins$signin_date))` attendees and presenters sign in.
@@ -197,3 +199,5 @@ Here is the distribution of units.
    theme_classic() +
    coord_flip()
 ```
+
+:::

@@ -39,8 +39,8 @@ format: html
 ### 10:30 am • Open @ Penn State
 
 - [*Penn State Data Commons*](https://www.datacommons.psu.edu), [Maurie Kelly](presenters.qmd#maurie-kelly) 
-- *Open scholarship and high performance computing*, [Wayne Figurelle](presenters.qmd#wayne-figurelle)
-- [*Scholarsphere*](https://scholarsphere.psu.edu): Penn State's institutional repository, [Briana Wham](program-committee.qmd#briana-wham)
+- *Open scholarship and high performance computing*, [Wayne Figurelle](presenters.qmd#wayne-figurelle), [pptx](include/pptx/roar_ppt 5-12-26.pptx)
+- [*Scholarsphere*](https://scholarsphere.psu.edu): Penn State's institutional repository, [Briana Wham](program-committee.qmd#briana-wham), [pdf](include/pdf/ScholarSphere-Overview.pdf)
 
 ### 11:00 am Workshop session 4 {#day_2_am_session_4}
 
